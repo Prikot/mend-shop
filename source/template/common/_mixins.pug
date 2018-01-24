@@ -1,0 +1,7 @@
+mixin nav(items, activeItem)
+  nav(class='nav')
+    .container
+      ul(class='nav__list')
+        each item, ndx in items
+          li(class='nav__item' + ( (ndx === activeItem) ? (' nav__item_active') : ''))
+            a(class='nav__link' href='#')= item
