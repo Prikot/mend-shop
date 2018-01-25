@@ -18,15 +18,6 @@ section {
     flex-direction: row;
     justify-content: flex-end;
   }
-  .slider-left {
-      background: url("/assets/img/luxfon.com-13070.jpg");
-      width: 100%;
-      margin: 0 auto;
-      height: 400px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-    }
 
   .slider-text {
     position: absolute;
@@ -73,7 +64,6 @@ section {
       }
     }
   }
-
 }
 
 .atelier-img {
@@ -83,84 +73,85 @@ section {
 
 #slider-about {
   .item-1 {
-    background: url("/assets/img/slider/about/about-1.png") center center;
+    background: url("/assets/img/slider/about/about-1.png") left center;
     background-size: cover;
   }
   .item-2 {
-    background: url("/assets/img/slider/about/about-2.png") center center;
+    background: url("/assets/img/slider/about/about-2.png") left center;
     background-size: cover;
   }
   .item-3 {
-    background: url("/assets/img/slider/about/about-3.png") center center;
+    background: url("/assets/img/slider/about/about-3.png") left center;
     background-size: cover;
   }
   .item-4 {
-    background: url("/assets/img/slider/about/about-4.png") center center;
+    background: url("/assets/img/slider/about/about-4.png") left center;
     background-size: cover;
   }
 }
 
 #slider-tissue {
   .item-1 {
-    background: url("/assets/img/slider/tissue/tissue-1.png") center center;
+    background: url("/assets/img/slider/tissue/tissue-1.png") left center;
     background-size: cover;
   }
   .item-2 {
-    background: url("/assets/img/slider/tissue/tissue-2.png") center center;
+    background: url("/assets/img/slider/tissue/tissue-2.png") left center;
     background-size: cover;
   }
   .item-3 {
-    background: url("/assets/img/slider/tissue/tissue-3.png") center center;
+    background: url("/assets/img/slider/tissue/tissue-3.png") left center;
     background-size: cover;
   }
   .item-4 {
-    background: url("/assets/img/slider/tissue/tissue-4.png") center center;
+    background: url("/assets/img/slider/tissue/tissue-4.png") left center;
     background-size: cover;
   }
 }
 #slider-studio {
   .item-1 {
-    background: url("/assets/img/slider/studio/studio-1.png") center center;
+    background: url("/assets/img/slider/studio/studio-1.png") left center;
     background-size: cover;
   }
   .item-2 {
-    background: url("/assets/img/slider/studio/studio-2.png") center center;
+    background: url("/assets/img/slider/studio/studio-2.png") left center;
     background-size: cover;
   }
   .item-3 {
-    background: url("/assets/img/slider/studio/studio-3.png") center center;
+    background: url("/assets/img/slider/studio/studio-3.png") left center;
     background-size: cover;
   }
   .item-4 {
-    background: url("/assets/img/slider/studio/studio-4.png") center center;
+    background: url("/assets/img/slider/studio/studio-4.png") left center;
     background-size: cover;
   }
 }
+
 #slider-showroom {
   .item-1 {
-    background: url("/assets/img/slider/showroom/showroom-1.png") center center;
+    background: url("/assets/img/slider/showroom/showroom-1.png") left center;
     background-size: cover;
   }
   .item-2 {
-    background: url("/assets/img/slider/showroom/showroom-2.png") center center;
+    background: url("/assets/img/slider/showroom/showroom-2.png") left center;
     background-size: cover;
   }
   .item-3 {
-    background: url("/assets/img/slider/showroom/showroom-3.png") center center;
+    background: url("/assets/img/slider/showroom/showroom-3.png") left center;
     background-size: cover;
   }
   .item-4 {
-    background: url("/assets/img/slider/showroom/showroom-4.png") center center;
+    background: url("/assets/img/slider/showroom/showroom-4.png") left center;
     background-size: cover;
   }
 }
 
 .owl-carousel {
+
   .owl-nav {
     position: absolute;
     top:4px;
     right: 22px;
-
 
     .owl-prev, .owl-next {
       background-color: white;
