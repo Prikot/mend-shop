@@ -40,15 +40,10 @@
     margin: 0;
     zoom: 1;
 
-
-
-    &:last-child,
-    &:nth-child(3)  {
+    &:last-child  {
       padding-right: 0;
     }
-    //&:nth-child(4) {
-    //  padding: 0 70px 0;
-    //}
+
     .nav__link {
       flex-wrap: nowrap;
       font-size: 18px;

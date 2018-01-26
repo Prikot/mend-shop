@@ -2,6 +2,9 @@ body {
   margin: 0;
 }
 
-@import 'common/home';
+@import 'pages/home';
+@import 'pages/tissue';
+
 @import 'common/header';
 @import 'common/main';
+@import 'common/footer';

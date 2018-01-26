@@ -1,0 +1,72 @@
+//.cover-link {
+//  display: block;
+//  width: 50%;
+//}
+
+.tissue-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  height: 500px;
+  //max-width: 500px;
+  flex-flow: row wrap;
+}
+
+.barhat {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  //height: 500px;
+  //max-width:50%;
+  flex-basis: 100px;
+  flex-grow: 1;
+  min-width: 300px;
+
+  &__img {
+    background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+    background-size: cover;
+    flex-basis: 100px;
+    flex-grow: 1;
+  }
+
+  &__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100px;
+    flex-grow: 1;
+    background-color: white;
+  }
+
+  &__title {}
+
+  &__text {}
+
+  &__link {}
+
+  .cover-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid transparent;
+    transition: border-color .3s, border-width .3s;
+    background-color: transparent;
+    z-index: 2;
+    box-sizing: border-box;
+
+    &:hover {
+      border-width: 15px;
+      border-color: rgba(0,0,0,.2);
+
+    }
+  }
+}
