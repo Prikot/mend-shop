@@ -1,34 +1,23 @@
-//.cover-link {
-//  display: block;
-//  width: 50%;
-//}
 
 .tissue-wrapper {
   display: flex;
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
-  height: 500px;
-  //max-width: 500px;
   flex-flow: row wrap;
 }
 
-.barhat {
-  position: relative;
+.tissue, .tissue-reverse {
+  //position: relative;
   padding: 0;
   margin: 0;
   border: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  //height: 500px;
-  //max-width:50%;
-  flex-basis: 100px;
-  flex-grow: 1;
-  min-width: 300px;
+  height: 450px;
+  flex: 1 1 600px;
 
   &__img {
-    background: url("/assets/img/tissue-page/barhat.jpeg") center center;
     background-size: cover;
     flex-basis: 100px;
     flex-grow: 1;
@@ -39,15 +28,66 @@
     display: flex;
     flex-direction: column;
     flex-basis: 100px;
+    justify-content: flex-start;
     flex-grow: 1;
     background-color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-sizing: border-box;
   }
 
-  &__title {}
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    font-family: Kurale-Regular, Roboto, sans-serif;
+  }
 
-  &__text {}
+  &__text {
+    font-size: 1rem;
+    //text-align: center;
+    font-family: Roboto, sans-serif;
+    //padding-top: 2rem;
+    line-height: 1.75;
+    color: #6a6c6e;
+    height: 200px;
+    overflow: hidden;
+  }
 
-  &__link {}
+  &__link {
+    background: #fff;
+    margin-bottom: -1px;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: 98px;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=0);
+    }
+    .tissue__url {
+      background-color: #e7ae01;
+      color: #fff;
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: .1em;
+      margin: 1em 0 0;
+      padding: 10px 20px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color .3s;
+      z-index: 10;
+
+
+    }
+  }
 
   .cover-link {
     display: block;
@@ -69,4 +109,26 @@
 
     }
   }
+}
+
+.barhat {
+  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+}
+.tvid {
+  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+}
+.shelk {
+  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+}
+.shifon {
+  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+}
+.kruzevo {
+  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+}
+.hlopok {
+  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+}
+.barhat {
+  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
 }

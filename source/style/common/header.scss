@@ -6,10 +6,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('/assets/img/banner-1.png') 0 -20px fixed;
-  animation: back-img 10s linear infinite;
-  //transform: translateY(0);
-  //animation: back-img 15s linear infinite alternate;;
+  background: url('/assets/img/banner-2.png');
+  //background-position: 0 0;
+  background-attachment:  fixed;
+  background-size: cover;
+  animation: back-img 20s linear infinite alternate;
+  //box-shadow: inset ;
+
   .container {
     margin: 10px auto;
     width: 100%;
@@ -125,30 +128,73 @@
 
 @keyframes back-img {
   from {
-    background: url("/assets/img/banner-1.png");
-    background-position: 0 -20px;
-
+    background: url("/assets/img/banner-2.png");
+    background-position: 0 0;
+    background-size: cover;
   }
 
-  20% {
+  9% {
+    background: url("/assets/img/banner-2.png");
+    background-position: 0 -10px;
+    background-size: cover;
+  }
+
+  18% {
     background: url("/assets/img/banner-2.png");
     background-position: 0 -20px;
-
+    background-size: cover;
   }
 
-  50% {
+  27% {
     background: url("/assets/img/banner-3.png");
     background-position: 0 -30px;
+    background-size: cover;
   }
 
-  70% {
-    background: url("/assets/img/banner-4.png");
+  36% {
+    background: url("/assets/img/banner-3.png");
     background-position: 0 -40px;
-
+    background-size: cover;
   }
+  45% {
+    background: url("/assets/img/banner-3.png");
+    background-position: 0 -50px;
+    background-size: cover;
+  }
+
+  54% {
+    background: url("/assets/img/banner-4.png");
+    background-position: 0 -60px;
+    background-size: cover;
+  }
+
+  63% {
+    background: url("/assets/img/banner-4.png");
+    background-position: 0 -70px;
+    background-size: cover;
+  }
+
+  72% {
+    background: url("/assets/img/banner-4.png");
+    background-position: 0 -80px;
+    background-size: cover;
+  }
+
+  81% {
+    background: url("/assets/img/banner-5.png");
+    background-position: 0 -90px;
+    background-size: cover;
+  }
+
+  90% {
+    background: url("/assets/img/banner-5.png");
+    background-position: 0 -100px;
+    background-size: cover;
+  }
+
   to {
     background: url("/assets/img/banner-5.png");
-    background-position: 0 -50px;
-
+    background-position: 0 -110px;
+    background-size: cover;
   }
 }
