@@ -6,11 +6,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('/assets/img/banner-1.png') center top 100%;
-  background-position: 0 -20px;
-  background-attachment: fixed;
-  animation: back-img 15s linear infinite alternate;
-
+  background: url('/assets/img/banner-1.png') 0 -20px fixed;
+  animation: back-img 10s linear infinite;
+  //transform: translateY(0);
+  //animation: back-img 15s linear infinite alternate;;
   .container {
     margin: 10px auto;
     width: 100%;
@@ -106,7 +105,6 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
     color: whitesmoke;
     margin: 0;
     padding-left: 30px;
@@ -126,7 +124,31 @@
 
 
 @keyframes back-img {
-  from {background-position: 0 0;}
-  50% {background-position: 0 -90px;}
-  to {background-position: 0 0;}
+  from {
+    background: url("/assets/img/banner-1.png");
+    background-position: 0 -20px;
+
+  }
+
+  20% {
+    background: url("/assets/img/banner-2.png");
+    background-position: 0 -20px;
+
+  }
+
+  50% {
+    background: url("/assets/img/banner-3.png");
+    background-position: 0 -30px;
+  }
+
+  70% {
+    background: url("/assets/img/banner-4.png");
+    background-position: 0 -40px;
+
+  }
+  to {
+    background: url("/assets/img/banner-5.png");
+    background-position: 0 -50px;
+
+  }
 }
