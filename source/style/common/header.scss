@@ -8,10 +8,12 @@
   align-items: center;
   background: url('/assets/img/banner-2.png');
   //background-position: 0 0;
-  background-attachment:  fixed;
   background-size: cover;
-  animation: back-img 20s linear infinite alternate;
+
+  //animation: back-img 20s linear infinite alternate;
+
   //box-shadow: inset ;
+  background-attachment:  fixed;
 
   .container {
     margin: 10px auto;

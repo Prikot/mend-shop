@@ -1,4 +1,3 @@
-
 .tissue-wrapper {
   display: flex;
   justify-content: center;
@@ -8,7 +7,7 @@
 }
 
 .tissue, .tissue-reverse {
-  //position: relative;
+  position: relative;
   padding: 0;
   margin: 0;
   border: 0;
@@ -37,8 +36,9 @@
   }
 
   &__title {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
+    text-transform: uppercase;
     font-family: Kurale-Regular, Roboto, sans-serif;
   }
 
@@ -111,24 +111,42 @@
   }
 }
 
-.barhat {
+.barhat .tissue__img {
   background: url("/assets/img/tissue-page/barhat.jpeg") center center;
 }
-.tvid {
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.tvid .tissue__img {
+  background: url("/assets/img/tissue-page/tvid-shanel.jpeg") center center;
 }
-.shelk {
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.shelk .tissue__img {
+  background: url("/assets/img/tissue-page/shelk.jpeg") center center;
 }
-.shifon {
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.shifon .tissue__img {
+  background: url("/assets/img/tissue-page/shifon.jpeg") center center;
 }
-.kruzevo {
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.gipur .tissue__img {
+  background: url("/assets/img/tissue-page/gipur.jpeg") center center;
 }
-.hlopok {
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.hlopok .tissue__img {
+  background: url("/assets/img/tissue-page/hlopok.jpeg") center center;
 }
-.barhat {
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
-}
+//.barhat .tissue__img {
+//  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+//}
+//.barhat .tissue__img{
+//  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+//}
+//.barhat .tissue__img{
+//  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+//}
+//.barhat .tissue__img{
+//  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+//}
+//.barhat .tissue__img{
+//  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+//}
+//.barhat .tissue__img{
+//  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+//}
+//.barhat .tissue__img{
+//  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+//}

@@ -9,7 +9,7 @@
     animateOut: 'fadeOut',
     dots: false,
     navText: ["&#9664;" , "&#9654;"],
-    autoplay:false, //Автозапуск слайдера
+    autoplay:true, //Автозапуск слайдера
     smartSpeed:1000, //Время движения слайда
     autoplayTimeout:4000, //Время смены слайда
     responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
@@ -49,7 +49,7 @@
     animateOut: 'fadeOut',
     dots: false,
     navText: ["&#9664;" , "&#9654;"],
-    autoplay:false, //Автозапуск слайдера
+    autoplay:true, //Автозапуск слайдера
     smartSpeed:1000, //Время движения слайда
     autoplayTimeout:4000, //Время смены слайда
     responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.

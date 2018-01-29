@@ -1,0 +1,23 @@
+.barhat-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  flex-flow: row wrap;
+}
+
+.barhat__img {
+  //position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  flex: 1 1 600px;
+}
+
+.barhat__img {
+  background: url("./assets/img/tissue-page/barhat.jpeg") center center;
+
+}
