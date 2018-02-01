@@ -21,7 +21,7 @@ function initMap() {
       {name: "Styled Map"});
 
   var mapOptions = {
-    zoom: 15,
+    zoom: 14,
     scaleControl: false,
     scrollwheel: false,
     center: new google.maps.LatLng(55.694732, 37.530343),

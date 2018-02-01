@@ -10,7 +10,7 @@
   .adress {
     position: absolute;
     left: 20px;
-    top: 0;
+    top: -10px;
     z-index: 10;
     font-size: 17px;
   }
@@ -19,22 +19,31 @@
  .instagram-wrapper {
    display: flex;
    flex: 1 1 400px;
+   margin: 20px;
  }
   .map-wrapper {
     //position: relative;
     min-height: 250px;
     margin-bottom: 25px;
-    margin-top: 40px;
+    margin-top: 45px;
   }
 
   .nav {
-    flex: 1 0 400px;
+    flex: 1 0 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+    .container {
+      width: 100%;
+    }
+
     .nav__list {
       margin: 0;
       padding-left: 0;
       display: flex;
-      flex-flow: column wrap;
+      flex-flow: row wrap;
       justify-content: space-around;
       align-items: stretch;
       align-content: center;
@@ -53,7 +62,7 @@
       height: 50px;
       margin: 0;
       zoom: 1;
-      flex: 1 1 50px;
+      flex: 1 1 150px;
 
 
       &:last-child,
@@ -63,6 +72,7 @@
 
       .nav__link {
         flex-wrap: nowrap;
+        margin: auto;
         font-size: 18px;
         align-self: center;
         color: whitesmoke;

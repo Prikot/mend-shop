@@ -2,7 +2,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: center;
   align-content: stretch;
   flex-flow: column nowrap;
 
@@ -13,32 +13,38 @@
     align-items: center;
     align-content: space-around;
     flex-flow: row wrap;
-    flex: 1 1 300px;
+    flex: 1 1 400px;
 
     &__img {
-      height: 250px;
-      width: 350px;
+      height: 300px;
+      flex: 2 1 200px;
+      margin: 40px;
+      align-content: flex-end;
     }
 
     &_item-1 .about__img {
-      background: url("/assets/img/slider/about/about-2.png") left center;
-      background-size: cover;
-    }
-    &_item-2 .about__img {
       background: url("/assets/img/slider/about/about-3.png") left center;
       background-size: cover;
     }
-    &_item-3 .about__img {
+    &_item-2 .about__img {
       background: url("/assets/img/slider/about/about-4.png") left center;
       background-size: cover;
     }
+    &_item-3 .about__img {
+      background: url("/assets/img/slider/about/about-3.png") left center;
+      background-size: cover;
+    }
     &_item-4 .about__img {
-      background: url("/assets/img/slider/about/about-1.png") left center;
+      background: url("/assets/img/slider/about/about-4.png") left center;
       background-size: cover;
     }
 
     &__text {
-      flex: 0 1 300px;
+      margin: 40px;
+      color: #504f51;
+      font-size: 16px;
+      line-height: 1.75;
+      flex: 1 1 300px;
 
     }
   }
