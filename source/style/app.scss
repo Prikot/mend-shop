@@ -3,8 +3,13 @@ body {
 }
 
 @import 'pages/home';
+@import 'pages/about';
 @import 'pages/tissue';
+  @import 'pages/barhat';
+@import 'pages/studio';
+@import 'pages/showroom';
 
 @import 'common/header';
+@import 'common/header-tissue';
 @import 'common/main';
 @import 'common/footer';

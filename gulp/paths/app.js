@@ -3,5 +3,6 @@
 module.exports = [
   './source/js/app.js',
   './source/js/owl-carousel.js',
-  './source/js/banner-change.js'
+  './source/js/banner-change.js',
+  './source/js/google_maps.js'
 ];

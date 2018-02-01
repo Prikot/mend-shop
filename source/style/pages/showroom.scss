@@ -1,4 +1,4 @@
-.tissue-wrapper {
+.showroom-wrapper {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -6,7 +6,7 @@
   flex-flow: row wrap;
 }
 
-.tissue, .tissue-reverse {
+.showroom, .showroom-reverse {
   position: relative;
   padding: 0;
   margin: 0;
@@ -25,6 +25,7 @@
   &__description {
     width: 50%;
     display: flex;
+    //height: 500px;
     flex-direction: column;
     flex-basis: 100px;
     justify-content: flex-start;
@@ -40,6 +41,15 @@
     text-align: center;
     text-transform: uppercase;
     font-family: Kurale-Regular, Roboto, sans-serif;
+    margin-bottom: 12px;
+    margin-top: 12px;
+
+    &:first-child {
+      margin-top: 25px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
@@ -60,6 +70,8 @@
     font-weight: 400;
     text-align: center;
     position: relative;
+    margin-top: auto;
+    margin-bottom: 100px;
 
     &:before {
       content: "";
@@ -71,7 +83,7 @@
       background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=0);
     }
-    .tissue__url {
+    .showroom__url {
       background-color: #e7ae01;
       color: #fff;
       display: inline-block;
@@ -111,45 +123,45 @@
   }
 }
 
-.barhat .tissue__img {
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.barhat .showroom__img {
+  background: url("/assets/img/showroom-page/barhat.jpeg") center center;
 }
-.tvid .tissue__img {
-  background: url("/assets/img/tissue-page/tvid-shanel.jpeg") center center;
+.tvid .showroom__img {
+  background: url("/assets/img/showroom-page/tvid-shanel.jpeg") center center;
 }
-.shelk .tissue__img {
-  background: url("/assets/img/tissue-page/shelk.jpeg") center center;
+.shelk .showroom__img {
+  background: url("/assets/img/showroom-page/shelk.jpeg") center center;
 }
-.shifon .tissue__img {
-  background: url("/assets/img/tissue-page/shifon.jpeg") center center;
+.shifon .showroom__img {
+  background: url("/assets/img/showroom-page/shifon.jpeg") center center;
 }
-.gipur .tissue__img {
-  background: url("/assets/img/tissue-page/gipur.jpeg") center center;
+.gipur .showroom__img {
+  background: url("/assets/img/showroom-page/gipur.jpeg") center center;
 }
-.hlopok .tissue__img {
-  background: url("/assets/img/tissue-page/hlopok.jpeg") center center;
+.hlopok .showroom__img {
+  background: url("/assets/img/showroom-page/hlopok.jpeg") center center;
 }
-.jakard .tissue__img {
-  background: url("/assets/img/tissue-page/jakard.jpeg") center center;
+.jakard .showroom__img {
+  background: url("/assets/img/showroom-page/jakard.jpeg") center center;
 }
-.kletka .tissue__img{
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.kletka .showroom__img{
+  background: url("/assets/img/showroom-page/barhat.jpeg") center center;
 }
-.trikotaj .tissue__img{
-  background: url("/assets/img/tissue-page/trikotaj.jpeg") center center;
+.trikotaj .showroom__img{
+  background: url("/assets/img/showroom-page/trikotaj.jpeg") center center;
 }
-.podkladka .tissue__img{
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.podkladka .showroom__img{
+  background: url("/assets/img/showroom-page/barhat.jpeg") center center;
 }
-.drap .tissue__img{
-  background: url("/assets/img/tissue-page/drap.jpeg") center center;
+.drap .showroom__img{
+  background: url("/assets/img/showroom-page/drap.jpeg") center center;
 }
-.costume .tissue__img{
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.costume .showroom__img{
+  background: url("/assets/img/showroom-page/barhat.jpeg") center center;
 }
-.furniture .tissue__img{
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+.furniture .showroom__img{
+  background: url("/assets/img/showroom-page/barhat.jpeg") center center;
 }
-.tissue-reverse .tissue__img {
+.showroom-reverse .showroom__img {
   order: 1;
 }

@@ -1,0 +1,33 @@
+.studio-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  flex-flow: column nowrap;
+
+  .studio,
+  .studio_reverse {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-flow: row wrap;
+    flex: 1 1 300px;
+
+    &__img {
+      height: 250px;
+      width: 350px;
+      background: url('/assets/img/slider/about/about-1.png');
+      background-size: cover;
+    }
+
+    &__text {
+      flex: 0 1 300px;
+
+    }
+  }
+  .studio_reverse {
+    flex-flow: row-reverse wrap;
+  }
+}

@@ -1,12 +1,24 @@
 footer.page-footer
-  a(href='/tissue.html') Ссылка ткани
-  +nav("nav", [["О нас", "/index.html"], ["Ткани", "/tissue.html"], ["Ателье", "/studio.html"], ["Mendosa", "/index.html"],
-    ["Шоурум", "/showroom.html"], ["Галерея", "/gallery.html"], ["Контакты", "/contacts.html"]], 9)
-  .socials
-    ul.socials__list
-      li.socials__item
-        a.socials__link.socials__link_vk(href='#')
-          i.fab.fa-facebook-f
-      li.socials__item
-        a.socials__link.socials__link_fb(href='#')
-          i.fab.fa-instagram
+  h2.adress Москва, Ломоносовский проспект, 25
+  .map-wrapper#map
+  .nav-wrapper
+    +nav("nav", [["О нас", "/index.html"], ["Ткани", "/tissue.html"], ["Ателье", "/studio.html"],
+      ["Шоурум", "/showroom.html"], ["Галерея", "/gallery.html"], ["Контакты", "/contacts.html"]], 9)
+  .instagram-wrapper
+
+
+
+
+
+
+
+
+
+    //.socials
+    //  ul.socials__list
+    //    li.socials__item
+    //      a.socials__link.socials__link_vk(href='#')
+    //        i.fab.fa-facebook-f
+    //    li.socials__item
+    //      a.socials__link.socials__link_fb(href='#')
+    //        i.fab.fa-instagram
