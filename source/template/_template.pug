@@ -23,12 +23,14 @@ html
     script(src='/assets/js/app.js' defer)
     script(src='https://use.fontawesome.com/releases/v5.0.4/js/all.js' defer)
     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCvgN-6_AAukrC84M7Txlh1psLF9dGhuc8&callback=initMap' async defer)
+
     <!--[if lt IE 9]>
     script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    script(src="5shiv/3.7.2/html5shiv.min.js")
     <![endif]-->
 
-  body
-    include common/_header
-    .content-wrapper
-      block content
-    include common/_footer
+    body
+      include common/_header
+      .content-wrapper
+        block content
+      include common/_footer

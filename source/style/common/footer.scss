@@ -20,6 +20,7 @@
    display: flex;
    flex: 1 1 400px;
    margin: 20px;
+   position: relative;
  }
   .map-wrapper {
     //position: relative;
@@ -29,7 +30,7 @@
   }
 
   .nav {
-    flex: 1 0 500px;
+    flex: 1 0 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +108,23 @@
 
 }
 
+.instagram-wrapper {
+  padding-top: 20px;
+  .instagram {
+    position: absolute;
+    top: 0;
+    left:0;
+    color: white;
+    text-decoration: none;
 
+  }
+}
+#instafeed {
+  img {
+    width: 145px;
+    height: 145px;
+  }
+}
 
 //.socials__list {
 //  display: flex;

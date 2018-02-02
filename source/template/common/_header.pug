@@ -1,6 +1,6 @@
 header.header#header
   +nav("nav", [["О нас","/about.html"], ["Ткани","/tissue.html"], ["Ателье","/studio.html"],
-    ["Шоурум","/showroom.html"], ["Галерея","/gallery.html"], ["Контакты","/contacts.html"]], 9)
+    ["Шоурум","/showroom.html"], ["Галерея","/gallery.html"], ["Контакты","/contacts.html"]], activeItem)
   .banner
     .banner__text_it
     //Bellissimi tessuti italiani
@@ -10,6 +10,6 @@ header.header#header
         .logo__text MENDOSA
     .text-container
       .banner__text Красивые итальянские ткани
+      .btn-container
+        i.go-down.fas.fa-chevron-down(data-link='.page-footer')
       .banner__text_it Bellissimi tessuti italiani
-
-//"О нас", "Ткани", "Ателье", "Mendosa", "Шоурум", "Галерея", "Контакты"
