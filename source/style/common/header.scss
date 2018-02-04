@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
-  background: url('/assets/img/banner-2.png') center center;
+  background: url('/assets/img/test-1-min.jpg') center center;
   background-size: cover;
   animation: back-img 15s linear infinite alternate;
   background-attachment:  fixed;
@@ -189,7 +189,7 @@
 
 @keyframes back-img {
   from {
-    background: url("/assets/img/banner-2.png");
+    background: url("/assets/img/test-2-min.jpg");
     background-position: 0 0;
     background-size: cover;
   }
@@ -207,7 +207,7 @@
   //}
 
   27% {
-    background: url("/assets/img/banner-3.png");
+    background: url("/assets/img/test-3-min.jpg");
     background-position: 0 -70px;
     background-size: cover;
   }
@@ -224,7 +224,7 @@
   //}
 
   54% {
-    background: url("/assets/img/banner-4.png");
+    background: url("/assets/img/test-4-min.jpg");
     background-position: 0 -60px;
     background-size: cover;
   }
@@ -254,7 +254,7 @@
   //}
 
   to {
-    background: url("/assets/img/banner-5.png");
+    background: url("/assets/img/test-5-min.jpg");
     background-position: 0 -110px;
     background-size: cover;
   }

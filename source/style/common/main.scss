@@ -20,10 +20,13 @@
   font-style: normal;
 }
 
+html {
+  min-height: 100%;
+}
 html,
 body {
   height: 100%;
-  font-family: Roboto, Arial, Tahoma;
+  font-family: Roboto, Arial, Tahoma, sans-serif;
   font-size: 14px;
 }
 
