@@ -1,5 +1,7 @@
 .barhat-wrapper {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   .container {
     width: 1180px;
@@ -20,8 +22,6 @@
   flex-direction: row;
   height: 295px;
   flex: 1 1 295px;
-  background: url("/assets/img/tissue-page/barhat.jpeg") top left;
-  background-size: cover;
   overflow-x: hidden;
 
 
@@ -39,4 +39,25 @@
       left: 0;
     }
   }
+}
+
+.barhat__img.item-1 {
+  background: url("/assets/img/tissue-item/tissue-1.jpg") top left;
+  background-size: cover;
+}
+.barhat__img.item-2 {
+  background: url("/assets/img/tissue-item/tissue-2.jpg") top left;
+  background-size: cover;
+}
+.barhat__img.item-3 {
+  background: url("/assets/img/tissue-item/tissue-3.jpg") top left;
+  background-size: cover;
+}
+.barhat__img.item-4 {
+  background: url("/assets/img/tissue-item/tissue-4.jpg") top left;
+  background-size: cover;
+}
+.barhat__img.item-1 {
+  background: url("/assets/img/tissue-item/tissue-1.jpg") top left;
+  background-size: cover;
 }

@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
-  background: url('/assets/img/banner-2.png');
+  background: url('/assets/img/test-3-min.jpg');
   background-size: cover;
   background-attachment:  fixed;
 
@@ -39,13 +39,12 @@
       margin: 0;
       zoom: 1;
 
-      &:last-child,
-      &:nth-child(3)  {
+      &:last-child {
         padding-right: 0;
       }
-      &:nth-child(4) {
-        padding: 0 70px 0;
-      }
+      //&:nth-child(4) {
+      //  padding: 0 70px 0;
+      //}
       .nav__link {
         flex-wrap: nowrap;
         font-size: 18px;
@@ -71,9 +70,9 @@
           text-decoration: none;
         }
       }
-      &:nth-child(4) .nav__link  {
-        font-size: 28px !important;
-      }
+      //&:nth-child(4) .nav__link  {
+      //  font-size: 28px !important;
+      //}
     }
     &__item_active &__link {
       color: grey;
@@ -88,7 +87,7 @@
 }
 
 
-.banner-tissue {
+.header-tissue .banner-tissue {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -98,99 +97,86 @@
   flex: 1 0 auto;
 
 
-  &__text {
+  .banner__text {
+    width: 100%;
+    //height: 100px !important;
     background: rgba(0,0,0, 0.4);
     font: 60px WolfgangAmadeusMozart, Roboto, sans-serif;
     line-height: 1.6;
     color: whitesmoke;
-    margin: 0;
-    //display: flex;
-
-    //padding-left: 30px;
-    //width: calc(100% - 30px);
     text-align: center;
-  }
-
-  &__text_it {
-    font: 50px WolfgangAmadeusMozart, Roboto, sans-serif;
-    color: whitesmoke;
-    margin-right: 30px;
-    text-align: right;
-    flex: 1 0 auto;
+    align-self: flex-end;
+    margin: 0;
+    margin-top: auto;
+    flex: 0 1 100%;
   }
 }
 
 
-
-@keyframes back-img {
+@keyframes change-back-img {
   from {
-    background: url("/assets/img/banner-2.png");
-    background-position: 0 0;
+    background: url("/assets/img/test-1-min.jpg");
     background-size: cover;
+    background-attachment:  fixed;
   }
 
-  9% {
-    background: url("/assets/img/banner-2.png");
-    background-position: 0 -10px;
+  15% {
+    background: url("/assets/img/test-2-min.jpg");
     background-size: cover;
+    background-attachment:  fixed;
   }
 
-  18% {
-    background: url("/assets/img/banner-2.png");
-    background-position: 0 -20px;
+  30% {
+    background: url("/assets/img/test-7-min.jpg");
     background-size: cover;
+    background-attachment:  fixed;
+
   }
 
-  27% {
-    background: url("/assets/img/banner-3.png");
-    background-position: 0 -30px;
-    background-size: cover;
-  }
-
-  36% {
-    background: url("/assets/img/banner-3.png");
-    background-position: 0 -40px;
-    background-size: cover;
-  }
   45% {
-    background: url("/assets/img/banner-3.png");
-    background-position: 0 -50px;
+    background: url("/assets/img/test-4-min.jpg");
     background-size: cover;
-  }
+    background-attachment:  fixed;
 
-  54% {
-    background: url("/assets/img/banner-4.png");
-    background-position: 0 -60px;
-    background-size: cover;
   }
-
-  63% {
-    background: url("/assets/img/banner-4.png");
-    background-position: 0 -70px;
+  60% {
+    background: url("/assets/img/test-5-min.jpg");
     background-size: cover;
+    background-attachment:  fixed;
+
   }
-
-  72% {
-    background: url("/assets/img/banner-4.png");
-    background-position: 0 -80px;
+  74% {
+    background: url("/assets/img/test-6-min.jpg");
     background-size: cover;
+    background-attachment:  fixed;
+
   }
-
-  81% {
-    background: url("/assets/img/banner-5.png");
-    background-position: 0 -90px;
+  88% {
+    background: url("/assets/img/test-6-min.jpg");
     background-size: cover;
-  }
+    background-attachment:  fixed;
 
-  90% {
-    background: url("/assets/img/banner-5.png");
-    background-position: 0 -100px;
-    background-size: cover;
   }
 
   to {
-    background: url("/assets/img/banner-5.png");
-    background-position: 0 -110px;
+    background: url("/assets/img/test-3-min.jpg");
     background-size: cover;
+    background-attachment:  fixed;
+
   }
 }
+@keyframes back-img {
+  from {
+    background-position: 0 0;
+
+  }
+
+
+
+  to {
+    background-position: 0 -140px;
+
+  }
+}
+
+
