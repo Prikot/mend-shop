@@ -8,14 +8,15 @@
   align-items: flex-end;
   justify-content: flex-end;
   background:
-          url('/assets/img/banner/test-12.jpg') top  center,
-          url('/assets/img/banner/test-12.jpg') top  center,
+          url('/assets/img/banner/test-14.jpg') top  center,
+
+          url('/assets/img/banner/test-18.jpg') top center,
+          url('/assets/img/banner/test-17.jpg') top center,
+          url('/assets/img/banner/test-16.jpg') top center,
+          url('/assets/img/banner/test-15.jpg') top center,
           url('/assets/img/banner/test-13.jpg') top  center,
-          url('/assets/img/banner/test-14.jpg') top center,
-          url('/assets/img/banner/test-15.jpg') top  center,
-          url('/assets/img/banner/test-16.jpg') top  center,
-          url('/assets/img/banner/test-17.jpg') top  center,
-          url('/assets/img/banner/test-18.jpg') top  center;
+          url('/assets/img/banner/test-12.jpg') top  center,
+          url('/assets/img/banner/test-11.jpg') top  center;
           //url('/assets/img/test-10-min.jpg') bottom center,
           //url('/assets/img/test-3-min.jpg') bottom center,
           //url('/assets/img/test-2-min.jpg') bottom center,
@@ -30,9 +31,9 @@
           //url('/assets/img/test-5-min.jpg') bottom center,
           //url('/assets/img/test-6-min.jpg') bottom center,
           //url('/assets/img/test-7-min.jpg') bottom center;
-  //background-size: cover;
+  background-size: cover;
   animation: change-back-img-test 30s linear infinite alternate, back-img 7s linear infinite alternate;
-  //background-attachment:  fixed;
+  background-attachment:  fixed;
   //transition: background 2s 1s linear;
 
   @include laptop() {
