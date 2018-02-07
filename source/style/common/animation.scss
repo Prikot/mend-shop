@@ -50,6 +50,58 @@
 
   }
 }
+@keyframes change-back-img-test {
+  from {
+    background: url("/assets/img/banner/test-18.jpg");
+    background-size: cover;
+    background-attachment:  fixed;
+  }
+
+  15% {
+    background: url("/assets/img/banner/test-11.jpg");
+    background-size: cover;
+    background-attachment:  fixed;
+  }
+
+  30% {
+    background: url("/assets/img/banner/test-12.jpg");
+    background-size: cover;
+    background-attachment:  fixed;
+
+  }
+
+  45% {
+    background: url("/assets/img/banner/test-13.jpg");
+    background-size: cover;
+    background-attachment:  fixed;
+
+  }
+  60% {
+    background: url("/assets/img/banner/test-14.jpg");
+    background-size: cover;
+    background-attachment:  fixed;
+
+  }
+  74% {
+    background: url("/assets/img/banner/test-15.jpg");
+    background-size: cover;
+    background-attachment:  fixed;
+
+  }
+  88% {
+    background: url("/assets/img/banner/test-16.jpg");
+    background-size: cover;
+    background-attachment:  fixed;
+
+  }
+
+  to {
+    background: url("/assets/img/banner/test-17.jpg");
+    background-size: cover;
+    background-attachment:  fixed;
+
+  }
+}
 @keyframes back-img {
   from {
     background-position-y: 0;

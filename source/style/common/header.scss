@@ -8,23 +8,31 @@
   align-items: flex-end;
   justify-content: flex-end;
   background:
-          url('/assets/img/test-10-min.jpg') bottom center,
-          url('/assets/img/test-3-min.jpg') bottom center,
-          url('/assets/img/test-2-min.jpg') bottom center,
-
-          url('/assets/img/test-4-min.jpg') bottom center,
-
-          url('/assets/img/test-1-min.jpg') center center,
-
-
-
-
-          url('/assets/img/test-5-min.jpg') bottom center,
-          url('/assets/img/test-6-min.jpg') bottom center,
-          url('/assets/img/test-7-min.jpg') bottom center;
+          url('/assets/img/banner/test-12.jpg') top  center,
+          url('/assets/img/banner/test-12.jpg') top  center,
+          url('/assets/img/banner/test-13.jpg') top  center,
+          url('/assets/img/banner/test-14.jpg') top center,
+          url('/assets/img/banner/test-15.jpg') top  center,
+          url('/assets/img/banner/test-16.jpg') top  center,
+          url('/assets/img/banner/test-17.jpg') top  center,
+          url('/assets/img/banner/test-18.jpg') top  center;
+          //url('/assets/img/test-10-min.jpg') bottom center,
+          //url('/assets/img/test-3-min.jpg') bottom center,
+          //url('/assets/img/test-2-min.jpg') bottom center,
+          //
+          //url('/assets/img/test-4-min.jpg') bottom center,
+          //
+          //url('/assets/img/test-1-min.jpg') center center,
+          //
+          //
+          //
+          //
+          //url('/assets/img/test-5-min.jpg') bottom center,
+          //url('/assets/img/test-6-min.jpg') bottom center,
+          //url('/assets/img/test-7-min.jpg') bottom center;
   //background-size: cover;
-  //animation: change-back-img 30s linear infinite alternate, back-img 7s linear infinite alternate;
-  background-attachment:  fixed;
+  animation: change-back-img-test 30s linear infinite alternate, back-img 7s linear infinite alternate;
+  //background-attachment:  fixed;
   //transition: background 2s 1s linear;
 
   @include laptop() {
@@ -179,15 +187,15 @@
   .logo-shadow-link {
     text-decoration: none;
     align-self: center;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.5);
-    box-shadow: 0 26px 64px 70px rgba(0, 0, 0, 0.5);
+    //background-color: rgba(0,0,0,0.3);
+    //box-shadow: 0 26px 64px 70px rgba(0, 0, 0, 0.3);
 
     @include laptop() {
       width: 300px;
@@ -207,7 +215,7 @@
 
     .logo-circle {
       align-self: center;
-      background: url("/assets/img/logo/logoopacity-gold.png") center center;
+      background: url("/assets/img/logo/logo-white.png") center center;
       background-size: 100%;
       background-repeat: no-repeat;
       width: 100%;
@@ -216,6 +224,9 @@
       flex-direction: column;
       justify-content: stretch;
       align-items: stretch;
+      border: none;
+      //background-color: rgba(0,0,0,0.5);
+
 
       @include laptop() {
         width: 300px;
