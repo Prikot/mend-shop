@@ -123,14 +123,14 @@
   }
 }
 
-.showroom .showroom__img {
-  background: url("/assets/img/showroom-page/barhat.jpeg") center center;
+.showroom.item-1 .showroom__img {
+  background: url("/assets/img/showroom-page/showroom-5.jpg") center center;
 }
-.showroom .showroom__img {
-  background: url("/assets/img/showroom-page/tvid-shanel.jpeg") center center;
+.showroom.item-2 .showroom__img {
+  background: url("/assets/img/showroom-page/showroom-6.jpg") center center;
 }
-.showroom .showroom__img {
-  background: url("/assets/img/showroom-page/shelk.jpeg") center center;
+.showroom-reverse.item-3 .showroom__img {
+  background: url("/assets/img/showroom-page/showroom-7.jpg") center center;
 }
 
 //.shifon .showroom__img {

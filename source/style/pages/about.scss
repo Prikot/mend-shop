@@ -13,34 +13,43 @@
     align-items: center;
     align-content: space-around;
     flex-flow: row wrap;
-    flex: 1 1 400px;
+    flex: 1 1 650px;
 
     &__img {
-      height: 300px;
-      flex: 2 1 200px;
+      height: 550px;
+      flex: 2 1 300px;
       margin: 40px;
       align-content: flex-end;
     }
 
-    &_item-1 .about__img {
-      background: url("/assets/img/slider/about/about-1-1920.jpg") left center;
+    &.item-1 .about__img {
+      background: url("/assets/img/slider/about/about-1-1920.jpg") center center;
       background-size: cover;
+      border-radius: 5px;
+
     }
-    &_item-2 .about__img {
-      background: url("/assets/img/slider/about/about-2-1920.jpg") left center;
+    &.item-2 .about__img {
+      background: url("/assets/img/slider/about/about-2-1920.jpg") center center;
       background-size: cover;
+      border-radius: 5px;
+
     }
-    &_item-3 .about__img {
-      background: url("/assets/img/slider/about/about-3-1920.jpg") left center;
+    &.item-3 .about__img {
+      background: url("/assets/img/slider/about/about-3-1920.jpg") center center;
       background-size: cover;
+      border-radius: 5px;
     }
-    &_item-4 .about__img {
-      background: url("/assets/img/slider/about/about-4-1920.jpg") left center;
+    &.item-4 .about__img {
+      background: url("/assets/img/slider/about/about-4-1920.jpg") center center;
       background-size: cover;
+      border-radius: 5px;
+
     }
-    &_item-5 .about__img {
+    &.item-5 .about__img {
       background: url("/assets/img/slider/about/about-5-1920.jpg") left center;
       background-size: cover;
+      border-radius: 5px;
+
     }
 
     &__text {
