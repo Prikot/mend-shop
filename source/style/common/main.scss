@@ -28,6 +28,10 @@ body {
   height: 100%;
   font-family: Roboto, Arial, Tahoma, sans-serif;
   font-size: 14px;
+
+  @include phones() {
+    font-size: 13px;
+  }
 }
 
 body {
@@ -45,6 +49,12 @@ h2 {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+hr {
+  background-color: rgb(7, 161, 242);
+  height: 1px;
+  margin-bottom: 29px;
+  padding: 0px;
+}
 
 ul {
   list-style: none;
@@ -57,7 +67,7 @@ footer {
 
 footer {
   height: 70px;
-  background-color: black;
+  background-color: #121212;
   color: white;
 }
 

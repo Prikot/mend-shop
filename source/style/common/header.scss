@@ -1,31 +1,85 @@
 .header {
   width: 100%;
   min-height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
   background:
+          url('/assets/img/test-3-min.jpg') bottom center,
+          url('/assets/img/test-2-min.jpg') bottom center,
+
+          url('/assets/img/test-4-min.jpg') bottom center,
+
           url('/assets/img/test-1-min.jpg') center center,
-          url('/assets/img/test-2-min.jpg') center center,
-          url('/assets/img/test-3-min.jpg') center center,
-          url('/assets/img/test-4-min.jpg') center center,
-          url('/assets/img/test-5-min.jpg') center center,
-          url('/assets/img/test-6-min.jpg') center center,
-          url('/assets/img/test-7-min.jpg') center center;
+
+
+
+
+          url('/assets/img/test-5-min.jpg') bottom center,
+          url('/assets/img/test-6-min.jpg') bottom center,
+          url('/assets/img/test-7-min.jpg') bottom center;
   //background-size: cover;
-  animation: change-back-img 25s linear infinite, back-img 10s linear infinite alternate;
-  //background-attachment:  fixed;
+  //animation: change-back-img 30s linear infinite alternate, back-img 7s linear infinite alternate;
+  background-attachment:  fixed;
   //transition: background 2s 1s linear;
 
-  .container {
-    margin: 10px auto;
-    width: 100%;
+  @include laptop() {
+    min-height: 80%;
+  }
+
+  @include tablets() {
+    min-height: 60%;
+  }
+
+  @include phones() {
+    min-height: 40%;
+  }
+
+  .call-me-baby {
+    position: absolute;
+    top: 5px;
+    left: 150px;
+  }
+
+  .instagram {
+    position: absolute;
+    top: 5px;
+    right: 150px;
+
+    @include desktop() {
+      right: 30px;
+    }
+
+    @include laptop() {
+      right: 0;
+    }
+
+    @include tablets() {
+
+    }
+
+    @include phones() {
+      min-height: 40%;
+    }
+  }
+  .instagram__link {
+    width: 40px;
+    height: 40px;
+    color: white;
+
+    &:hover {
+      color: #e7c993;
+    }
   }
   .nav {
     width: 100%;
-    background: rgba(0,0,0, 0.3);
+    margin-bottom: auto;
     align-self: flex-start;
+    background: rgba(0,0,0, 0.5);
+    box-shadow: 0 20px 60px 30px rgba(0, 0, 0, 0.5);
 
     &__list {
       margin: 0;
@@ -35,19 +89,34 @@
       justify-content: center;
       list-style: none;
 
+      @include tablets() {
+        flex-wrap: wrap;
+      }
+
+      @include phones() {
+      }
     }
 
     &__item {
+      width: auto;
+      height: 50px;
+      margin: 0;
+      padding-right: 50px;
       display: flex;
       flex-direction: row;
       justify-content: left;
       align-items: center;
-      width: auto;
-      padding-right: 50px;
-      height: 50px;
-      margin: 0;
       zoom: 1;
 
+      @include tablets() {
+        height: 40px;
+        padding-right: 28px;
+      }
+
+      @include phones() {
+        height: 30px;
+        padding-right: 20px;
+      }
       &:last-child{
         padding-right: 0;
       }
@@ -56,7 +125,7 @@
       //}
       .nav__link {
         flex-wrap: nowrap;
-        font-size: 18px;
+        font-size: 20px;
         align-self: center;
         color: whitesmoke;
         text-decoration: none;
@@ -64,6 +133,15 @@
         transition: color 0.5s;
         font-family: Kurale-Regular, Roboto, sans-serif;
 
+        @include tablets() {
+          font-size: 16px;
+
+        }
+
+        @include phones() {
+          font-size: 14px;
+
+        }
         &:link {
           text-decoration: none;
         }
@@ -94,7 +172,8 @@
   align-items: stretch;
   align-content: stretch;
   width: 100%;
-  flex: 1 0 auto;
+  //flex: 1 0 auto;
+
 
   .logo-shadow-link {
     text-decoration: none;
@@ -109,17 +188,50 @@
     background-color: rgba(0,0,0,0.5);
     box-shadow: 0 26px 64px 70px rgba(0, 0, 0, 0.5);
 
+    @include laptop() {
+      width: 300px;
+      height: 300px;
+
+    }
+    @include tablets() {
+      width: 200px;
+      height: 200px;
+      margin-top: auto;
+    }
+
+    @include phones() {
+      width: 150px;
+      height: 150px;
+    }
 
     .logo-circle {
       align-self: center;
-      width: 350px;
-      height: 350px;
-      border-radius: 50%;
-      border: 2px solid white;
+      background: url("/assets/img/logo/logoopacity-gold.png") center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: stretch;
+      align-items: stretch;
+
+      @include laptop() {
+        width: 300px;
+        height: 300px;
+
+      }
+      @include tablets() {
+        width: 200px;
+        height: 200px;
+
+      }
+
+      @include phones() {
+        width: 150px;
+        height: 150px;
+        margin-top: 40px;
+      }
     }
     .logo {
       display: block;
@@ -129,22 +241,44 @@
       color: white;
       font-size: 200px;
       line-height: 150px;
-      font-family: WolfgangAmadeusMozart;
+      font-family: WolfgangAmadeusMozart, sans-serif;
+
+      @include laptop() {
+        font-size: 150px;
+        line-height: 115px;
+      }
+      @include tablets() {
+        font-size: 100px;
+        line-height: 75px;
+      }
+
+      @include phones() {
+        font-size: 70px;
+        line-height: 50px;
+      }
     }
     .logo__text {
       font-size: 50px;
       font-family: Rockwell, Roboto, Arial, Tahoma, sans-serif;
       color: white;
 
+      @include tablets() {
+        font-size: 40px;
+      }
+
+      @include phones() {
+        font-size: 30px;
+
+      }
     }
   }
 
   .text-container {
+    height: 100px;
     display: flex;
     flex-direction: row;
-    background: rgba(0,0,0, 0.5);
-    box-shadow: 0 26px 64px 70px rgba(0, 0, 0, 0.5);
-
+    background: rgba(0,0,0, 0.4);
+    box-shadow: 0px -20px 30px 6px rgba(0, 0, 0, 0.4);
   }
   &__text {
     font: 60px WolfgangAmadeusMozart, Roboto, sans-serif;
@@ -153,6 +287,19 @@
     margin: 0;
     text-align: center;
     flex: 1 1 50%;
+
+    @include desktop() {
+      font-size: 50px;
+    }
+    @include laptop() {
+      font-size: 40px;
+      line-height: 2;
+
+    }
+
+    @include tablets() {
+      font-size: 40px;
+    }
   }
 
   &__text_it {
@@ -162,6 +309,24 @@
     flex: 1 1 50%;
     position: relative;
 
+    @include desktop() {
+      font-size: 55px;
+    }
+
+
+    @include laptop() {
+      font-size: 40px;
+      line-height: 2;
+
+    }
+    @include tablets() {
+      display: none;
+
+    }
+
+    @include phones() {
+      display: none;
+    }
   }
 }
 
@@ -169,6 +334,15 @@
    display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: arrow-move 1s ease-in infinite alternate;
+  @include tablets() {
+    display: none;
+
+  }
+  @include phones() {
+    display: none;
+  }
+
   .go-down {
     width: 50px;
     height: 50px;

@@ -1,15 +1,17 @@
 header.header#header
+  //a.call-me-baby
+  //  i.instagram__link.fab.fa-phone
+  a.instagram(target='_blank' href="https://www.instagram.com/tkani_mendosa/")
+    i.instagram__link.fab.fa-instagram
   +nav("nav", [["О нас","/about.html"], ["Ткани","/tissue.html"], ["Ателье","/studio.html"],
-    ["Шоурум","/showroom.html"], ["Галерея","/gallery.html"], ["Контакты","/contacts.html"]], activeItem)
+    ["Шоурум","/showroom.html"], ["Галерея","/gallery.html"], ["Контакты","/contact.html"]], activeItem)
   .banner
-    .banner__text_it
-    //Bellissimi tessuti italiani
     a(href='/index.html').logo-shadow-link
       .logo-circle
-        .logo M
-        .logo__text MENDOSA
+        //.logo M
+        //.logo__text MENDOSA
     .text-container
       .banner__text Красивые итальянские ткани
       a(href='#id1').btn-container
-        .go-down.fas.fa-chevron-down(data-link='.page-footer')
+        .go-down.fas.fa-chevron-down
       .banner__text_it Bellissimi tessuti italiani

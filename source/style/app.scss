@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+@import 'common/_mixins';
 
 @import 'pages/home';
 @import 'pages/about';
@@ -8,8 +9,10 @@ body {
   @import 'pages/barhat';
 @import 'pages/studio';
 @import 'pages/showroom';
+@import 'pages/contact';
 
 @import 'common/header';
 @import 'common/header-tissue';
 @import 'common/main';
 @import 'common/footer';
+@import 'common/animation';

@@ -18,6 +18,16 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    @include tablets() {
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 400px;
+
+    }
+
+    @include phones() {
+      height: 300px;
+    }
   }
 
   .slider-text {
@@ -32,6 +42,17 @@ section {
     height: 100%;
     background: rgba(0,0,0, 0.6);
 
+    @include laptop() {
+      width: 300px;
+    }
+    @include tablets() {
+      width: 250px;
+    }
+
+    @include phones() {
+      display: none;
+    }
+
     &__title {
       font-family: Kurale-Regular, Roboto, sans-serif;
       text-align: center;
@@ -44,24 +65,35 @@ section {
 
     &__description {
       font-weight: 100;
-      line-height: 1.42;
+      font-size: 16px;
+      line-height: 1.75;
       font-family: Roboto, Tahoma, sans-serif;
-      padding: 20px 25px 25px 35px;
+      padding: 25px 30px 25px 40px;
     }
 
     &__moreinfo {
       padding: 40px;
       margin-top: auto;
       text-align: end;
-
     }
 
     &__link {
       text-decoration: none;
       color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 16px;
+
+      transition: color 0.3s;
+
+      .fa-chevron-right {
+        margin-left: 10px;
+        font-size: 16px;
+      }
 
       &:hover {
         color: lightgray;
+        //font-size: 17px;
       }
     }
   }
@@ -74,75 +106,75 @@ section {
 
 #slider-about {
   .item-1 {
-    background: url("/assets/img/slider/about/about-1.png") left center;
+    background: url("/assets/img/slider/about/about-1-1000.jpg.png") center center;
     background-size: cover;
   }
   .item-2 {
-    background: url("/assets/img/slider/about/about-2.png") left center;
+    background: url("/assets/img/slider/about/about-2-1000.jpg") center center;
     background-size: cover;
   }
   .item-3 {
-    background: url("/assets/img/slider/about/about-3.png") left center;
+    background: url("/assets/img/slider/about/about-4-1000.jpg") center center;
     background-size: cover;
   }
   .item-4 {
-    background: url("/assets/img/slider/about/about-4.png") left center;
+    background: url("/assets/img/slider/about/about-5-1000.jpg") center center;
     background-size: cover;
   }
 }
 
 #slider-tissue {
   .item-1 {
-    background: url("/assets/img/slider/tissue/tissue-1.png") left center;
+    background: url("/assets/img/slider/tissue/tissue-7-r.jpeg") left center;
     background-size: cover;
   }
   .item-2 {
-    background: url("/assets/img/slider/tissue/tissue-2.png") left center;
+    background: url("/assets/img/slider/tissue/tissue-8.jpeg") left center;
     background-size: cover;
   }
   .item-3 {
-    background: url("/assets/img/slider/tissue/tissue-3.png") left center;
+    background: url("/assets/img/slider/tissue/tissue-1.jpeg") left center;
     background-size: cover;
   }
   .item-4 {
-    background: url("/assets/img/slider/tissue/tissue-4.png") left center;
+    background: url("/assets/img/slider/tissue/tissue-4.jpeg") left center;
     background-size: cover;
   }
 }
 #slider-studio {
   .item-1 {
-    background: url("/assets/img/slider/studio/studio-1.png") left center;
+    background: url("/assets/img/slider/studio/studio-1.jpeg") left center;
     background-size: cover;
   }
   .item-2 {
-    background: url("/assets/img/slider/studio/studio-2.png") left center;
+    background: url("/assets/img/slider/studio/studio-2.jpeg") left center;
     background-size: cover;
   }
   .item-3 {
-    background: url("/assets/img/slider/studio/studio-3.png") left center;
+    background: url("/assets/img/slider/studio/studio-3.jpeg") left center;
     background-size: cover;
   }
   .item-4 {
-    background: url("/assets/img/slider/studio/studio-4.png") left center;
+    background: url("/assets/img/slider/studio/studio-4.jpeg") left center;
     background-size: cover;
   }
 }
 
 #slider-showroom {
   .item-1 {
-    background: url("/assets/img/slider/showroom/showroom-1.png") left center;
+    background: url("/assets/img/slider/showroom/showroom-5.jpeg") left center;
     background-size: cover;
   }
   .item-2 {
-    background: url("/assets/img/slider/showroom/showroom-2.png") left center;
+    background: url("/assets/img/slider/showroom/showroom-6.jpeg") left center;
     background-size: cover;
   }
   .item-3 {
-    background: url("/assets/img/slider/showroom/showroom-3.png") left center;
+    background: url("/assets/img/slider/showroom/showroom-7.jpeg") left center;
     background-size: cover;
   }
   .item-4 {
-    background: url("/assets/img/slider/showroom/showroom-4.png") left center;
+    background: url("/assets/img/slider/showroom/showroom-4.jpeg") left center;
     background-size: cover;
   }
 }
@@ -151,14 +183,16 @@ section {
 
   .owl-nav {
     position: absolute;
-    top:4px;
-    right: 22px;
+    top:2px;
+    right: 20px;
 
     .owl-prev, .owl-next {
-      background-color: white;
-      color: black;
+      background-color: rgba(255,255,255,0.2);
+      color: white;
+      font-size: 18px;
       &:hover {
-        background-color: lightgray;
+        color: lightgray;
+        background-color: rgba(255,255,255,0.3);
       }
     }
 
