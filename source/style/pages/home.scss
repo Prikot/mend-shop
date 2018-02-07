@@ -9,7 +9,10 @@ section {
   position: relative;
   flex-direction: row;
   justify-content: center;
-  margin-top: 100px;
+
+  &:first-child {
+    margin-top: 100px;
+  }
   
   .slider-right {
     width: 100%;
