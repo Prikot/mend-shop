@@ -13,12 +13,13 @@
     top: -10px;
     z-index: 10;
     font-size: 17px;
+    font-weight: 100;
   }
  .map-wrapper,
  .nav-wrapper,
  .instagram-wrapper {
    display: flex;
-   flex: 1 1 400px;
+   flex: 1 1 300px;
    margin: 20px;
    position: relative;
  }
@@ -30,7 +31,7 @@
   }
 
   .nav {
-    flex: 1 0 400px;
+    flex: 1 1 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +60,7 @@
       justify-content: left;
       align-items: center;
       //padding-right: 40px;
-      width: 100px;
+      width: 33%;
       height: 50px;
       margin: 0;
       zoom: 1;
@@ -82,18 +83,8 @@
         transition: color 0.5s;
         font-family: Kurale-Regular, Roboto, sans-serif;
 
-        &:link {
-          text-decoration: none;
-        }
-        &:visited {
-          text-decoration: none;
-        }
         &:hover {
           color: #e7c993;
-          text-decoration: none;
-        }
-        &:active {
-          color: grey;
           text-decoration: none;
         }
       }
@@ -121,9 +112,18 @@
 }
 #instafeed {
   img {
-    width: 145px;
-    height: 145px;
+    width: 33%;
+    height: auto;
   }
+
+  @include tablets() {
+    height: 400px;
+
+  }
+  //
+  //@include phones() {
+  //  height: 300px;
+  //}
 }
 
 //.socials__list {

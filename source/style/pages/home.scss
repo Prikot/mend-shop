@@ -31,6 +31,7 @@ section {
     @include phones() {
       height: 300px;
     }
+
   }
 
   .slider-text {
@@ -186,8 +187,9 @@ section {
 
   .owl-nav {
     position: absolute;
-    top:2px;
+    top:0;
     right: 20px;
+    margin-top: 8px;
 
     .owl-prev, .owl-next {
       background-color: rgba(255,255,255,0.2);

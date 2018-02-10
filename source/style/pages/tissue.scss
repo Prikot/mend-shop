@@ -150,6 +150,17 @@
 .furniture .tissue__img{
   background: url("/assets/img/tissue-page/barhat.jpeg") center center;
 }
-.tissue-reverse .tissue__img {
+.tissue-reverse {
+  .tissue__img {
+    order: 1;
+  }
+
+}
+
+.tissue-reverse:nth-child(2n + 1) .tissue__img {
+  order: 1;
+}
+
+.tissue:nth-child(2n) .tissue__img {
   order: 1;
 }

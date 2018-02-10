@@ -1,3 +1,5 @@
+$main-color: #ddc6b9;
+
 //Kurale-Regular font
 @font-face {
   font-family: 'Kurale-Regular';
@@ -39,7 +41,7 @@ body {
   flex-direction: column;
 }
 .content-wrapper {
-  background: #c0acac;
+  background: $main-color;
   //padding-bottom: 50px;
   flex: 1 0 auto;
   padding-bottom: 50px;

@@ -52,51 +52,51 @@
 }
 @keyframes change-back-img-test {
   from {
-    background: url("/assets/img/banner/test-11.jpg");
+    background: url("/assets/img/banner/test-11-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
   }
 
   15% {
-    background: url("/assets/img/banner/test-12.jpg");
+    background: url("/assets/img/banner/test-12-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
   }
 
   30% {
-    background: url("/assets/img/banner/test-14.jpg");
+    background: url("/assets/img/banner/test-14-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
 
   44% {
-    background: url("/assets/img/banner/test-13.jpg");
+    background: url("/assets/img/banner/test-3-min-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
   59% {
-    background: url("/assets/img/banner/test-18.jpg");
+    background: url("/assets/img/banner/test-18-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
   73% {
-    background: url("/assets/img/banner/test-15.jpg");
+    background: url("/assets/img/banner/test-15-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
   87% {
-    background: url("/assets/img/banner/test-16.jpg");
+    background: url("/assets/img/banner/test-16-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
 
   to {
-    background: url("/assets/img/banner/test-17.jpg");
+    background: url("/assets/img/banner/test-17-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
@@ -104,11 +104,23 @@
 }
 @keyframes back-img {
   from {
-    background-position-y: 0;
+    transform: translateY(0);
   }
 
   to {
-    background-position-y: -140px;
+    transform: translateY(-140px);
+
+  }
+}
+
+@keyframes back-img-test {
+  from {
+    transform: translateY(0) translateZ(0) ;
+  }
+
+  to {
+    transform: translateY(-140px);
+
   }
 }
 @keyframes arrow-move {
