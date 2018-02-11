@@ -1,4 +1,4 @@
-$('.toggle-menu').on('click touchstart', function(){
+$('.toggle-menu').on('click' || 'touchstart', function(){
 
   var $this = $(this);
   console.log($(this));

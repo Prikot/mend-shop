@@ -1,4 +1,4 @@
-$main-color: #ddc6b9;
+$main-color: rgb(252, 228, 236);
 
 .header {
   width: 100%;
@@ -10,6 +10,7 @@ $main-color: #ddc6b9;
   justify-content: flex-end;
   align-items: flex-end;
   overflow: hidden;
+  white-space: nowrap;
   //background:
   //        url('/assets/img/banner/test-11-min.jpg') top  center,
   //        url('/assets/img/banner/test-3-min-min.jpg') top center,
@@ -69,13 +70,15 @@ $main-color: #ddc6b9;
     top: 5px;
     right: 150px;
 
+    @include laptop() {
+      right: 15px;
+    }
+
     @include desktop() {
       right: 30px;
     }
 
-    @include laptop() {
-      right: 0;
-    }
+
 
     @include tablets() {
 
@@ -101,6 +104,10 @@ $main-color: #ddc6b9;
     background: rgba(0,0,0, 0.5);
     box-shadow: 0 20px 60px 30px rgba(0, 0, 0, 0.5);
 
+    @include tablets() {
+      display: none;
+    }
+
     &__list {
       margin: 0;
       padding-left: 0;
@@ -113,8 +120,6 @@ $main-color: #ddc6b9;
         flex-wrap: wrap;
       }
 
-      @include phones() {
-      }
     }
 
     &__item {
@@ -127,6 +132,11 @@ $main-color: #ddc6b9;
       justify-content: left;
       align-items: center;
       zoom: 1;
+
+      @include laptop() {
+        height: 50px;
+        padding-right: 35px;
+      }
 
       @include tablets() {
         height: 40px;
@@ -153,6 +163,10 @@ $main-color: #ddc6b9;
         transition: color 0.5s;
         font-family: Kurale-Regular, Roboto, sans-serif;
 
+        @include laptop() {
+          font-size: 18px;
+        }
+
         @include tablets() {
           font-size: 16px;
         }
@@ -174,6 +188,8 @@ $main-color: #ddc6b9;
         &:active {
           color: #e7c993;
           text-decoration: none;
+
+
         }
       }
     }
@@ -181,6 +197,7 @@ $main-color: #ddc6b9;
       color: #e7c993;
       pointer-events: none; /* делаем элемент неактивным для взаимодействия */
       cursor: default;
+
     }
   }
 }
@@ -381,14 +398,17 @@ $main-color: #ddc6b9;
 }
 .screen-menu {
   &__item_active &__link {
-    color: #e7c993;
+    color: gray;
     pointer-events: none; /* делаем элемент неактивным для взаимодействия */
     cursor: default;
 
+
+
     .subtitle {
-      color: #e7c993;
+      color: gray;
       pointer-events: none; /* делаем элемент неактивным для взаимодействия */
       cursor: default;
+
     }
   }
 }
