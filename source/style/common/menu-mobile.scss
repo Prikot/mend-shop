@@ -12,6 +12,8 @@ $main-color: rgb(252, 228, 236);
   background-color: transparent;
   z-index: 10001;
   cursor: pointer;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 4px;
   &:hover {
     .sandw .sandw-top,
     .sandw .sandw-middle,

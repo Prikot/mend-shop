@@ -31,6 +31,14 @@ $main-color: rgb(252, 228, 236);
   //background-size: cover;
   //animation: change-back-img-test 30s linear infinite 3s forwards, back-img 7s linear infinite alternate 3s;
   //background-attachment:  fixed;
+
+  @include tablets() {
+    height: 50vh;
+  }
+
+  @include phones() {
+    min-height: 40%;
+  }
   .header__background {
     position: absolute;
     top: 0;
@@ -38,12 +46,46 @@ $main-color: rgb(252, 228, 236);
     bottom: 0;
     right: 0;
     z-index: -1;
-    height: 1280px;
+    min-height: 1280px;
     //animation: back-img-test 7s linear infinite alternate;
+    @include phones() {
+      top: -250px;
+    }
 
     img {
       display: block;
-      max-width: 100%;
+      //max-width: 100%;
+
+      //&.i-1 {
+      //  animation: elem-out 4s linear;
+      //  //animation-delay: 0;
+      //  opacity: 1;
+      //  z-index: 1;
+      //}
+      //&.i-2 {
+      //  opacity: 0;
+      //  z-index: 0;
+      //  animation: elem-in 4s linear;
+      //  animation-delay: 4s;
+      //}
+      //&.i-3 {
+      //  animation: elem-in 2s 8s linear, elem-out 2s 10s linear;
+      //}
+      .i-4 {
+        animation: elem-in 2s 8s linear;
+      }
+      .i-5 {
+        animation: elem-in 2s 10s linear;
+      }
+      .i-6 {
+        animation: elem-in 2s 12s linear;
+      }
+      .i-7 {
+        animation: elem-in 2s 14s linear;
+      }
+      .i-8 {
+        animation: elem-in 2s 16s linear;
+      }
     }
 
   }
@@ -70,24 +112,21 @@ $main-color: rgb(252, 228, 236);
     top: 5px;
     right: 150px;
 
-    @include laptop() {
-      right: 15px;
-    }
-
     @include desktop() {
       right: 30px;
     }
 
-
-
-    @include tablets() {
-
+    @include laptop() {
+      right: 15px;
     }
+
+    @include tablets() {}
 
     @include phones() {
       min-height: 40%;
     }
   }
+
   .instagram__link {
     width: 40px;
     height: 40px;
@@ -103,6 +142,10 @@ $main-color: rgb(252, 228, 236);
     align-self: flex-start;
     background: rgba(0,0,0, 0.5);
     box-shadow: 0 20px 60px 30px rgba(0, 0, 0, 0.5);
+
+    @include laptop() {
+      box-shadow: none;
+    }
 
     @include tablets() {
       display: none;
@@ -227,8 +270,8 @@ $main-color: rgb(252, 228, 236);
     @include laptop() {
       width: 300px;
       height: 300px;
-
     }
+
     @include tablets() {
       width: 200px;
       height: 200px;
@@ -267,9 +310,9 @@ $main-color: rgb(252, 228, 236);
       }
 
       @include phones() {
-        width: 150px;
-        height: 150px;
-        margin-top: 40px;
+        width: 200px;
+        height: 200px;
+        margin-top: 0;
       }
     }
     .logo {

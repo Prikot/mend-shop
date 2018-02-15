@@ -34,6 +34,10 @@
     padding-left: 3rem;
     padding-right: 3rem;
     box-sizing: border-box;
+    @include phones() {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 
   &__title {
@@ -43,7 +47,9 @@
     font-family: Kurale-Regular, Roboto, sans-serif;
     margin-bottom: 12px;
     margin-top: 12px;
-
+    &_long {
+      font-size: 1.8rem;
+    }
     &:first-child {
       margin-top: 25px;
     }
@@ -165,4 +171,16 @@
 //}
 .showroom-reverse .showroom__img {
   order: 1;
+}
+
+.showroom:nth-child(2n) .showroom__img {
+  @include phones() {
+    order: 1;
+  }
+}
+
+.showroom-reverse:nth-child(2n + 1) .showroom__img {
+  @include phones() {
+    order: 0;
+  }
 }

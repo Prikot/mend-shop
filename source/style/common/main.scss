@@ -58,7 +58,14 @@ hr {
   width: 90%;
   margin-bottom: 75px;
   margin-top: 75px;
-  padding: 0px;
+  padding: 0;
+
+  @include phones() {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 100%;
+
+  }
 }
 
 ul {

@@ -1,6 +1,18 @@
 .container {
   width: 80%;
   margin: 0 auto;
+
+  @include laptop() {
+    width: 90%;
+    //min-width: 300px;
+  }
+  hr {
+    @include tablets() {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
 }
 
 section {
@@ -10,8 +22,30 @@ section {
   flex-direction: row;
   justify-content: center;
 
+  @include tablets() {
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1 1 100vh;
+    height: 100vh;
+    min-height: 400px;
+  }
+
+
+
+  @include phones() {
+    flex: 1 1 100vh;
+    height: 100vh;
+    min-height: 400px;
+    justify-content: space-around;
+
+  }
+
   &:first-child {
     margin-top: 100px;
+
+    @include tablets() {
+      margin-top: 10px;
+    }
   }
   
   .slider-right {
@@ -21,15 +55,15 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
     @include tablets() {
       flex-direction: column;
-      justify-content: flex-end;
-      height: 400px;
-
+      justify-content: space-around;
+      height: 50vh;
     }
 
     @include phones() {
-      height: 300px;
+      height: 40vh;
     }
 
   }
@@ -50,7 +84,7 @@ section {
       width: 300px;
     }
     @include tablets() {
-      width: 250px;
+      display: none;
     }
 
     @include phones() {
@@ -100,6 +134,40 @@ section {
         //font-size: 17px;
       }
     }
+  }
+}
+
+.about__title,
+.tissue-main__title,
+.studio__title,
+.showroom-main__title {
+  font-family: Kurale-Regular, Roboto, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  display: none;
+
+  @include tablets() {
+    display: block;
+    font-size: 40px;
+  }
+}
+
+.about__description,
+.tissue-main__description,
+.studio__description,
+.showroom-main__description  {
+  //font-weight: 100;
+  font-size: 16px;
+  line-height: 1.75;
+  font-family: Roboto, Tahoma, sans-serif;
+  padding: 40px 20px 0 20px;
+  display: none;
+
+  @include tablets() {
+    display: block;
   }
 }
 

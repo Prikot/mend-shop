@@ -2,9 +2,17 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   align-content: stretch;
   flex-flow: column nowrap;
+
+  hr {
+    display: none;
+    @include phones() {
+      display: block;
+      width: 80%;
+    }
+  }
 
   .about,
   .about_reverse {
@@ -13,13 +21,18 @@
     align-items: center;
     align-content: space-around;
     flex-flow: row wrap;
-    flex: 1 1 650px;
+    flex: 1 1 100vh;
 
     &__img {
       height: 550px;
       flex: 2 1 300px;
       margin: 40px;
       align-content: flex-end;
+
+      @include phones() {
+        height: 350px;
+
+      }
     }
 
     &.item-1 .about__img {
@@ -54,6 +67,7 @@
 
     &__text {
       margin: 40px;
+      margin-top: 0;
       color: #504f51;
       font-size: 16px;
       line-height: 1.75;

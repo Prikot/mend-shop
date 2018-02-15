@@ -132,3 +132,28 @@
     margin-top: 20px;
   }
 }
+
+@keyframes elem-in {
+  from {
+    opacity: 0;
+  }
+
+
+  to {
+    opacity: 1;
+    //z-index: 1;
+  }
+}
+@keyframes elem-out {
+  from {
+    opacity: 1;
+  }
+
+
+  to {
+    opacity: 0;
+    //z-index: 0;
+  }
+}
+
+
