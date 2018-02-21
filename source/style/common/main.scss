@@ -30,6 +30,7 @@ body {
   height: 100%;
   font-family: Roboto, Arial, Tahoma, sans-serif;
   font-size: 14px;
+  min-width: 320px;
 
   @include phones() {
     font-size: 13px;
@@ -42,9 +43,6 @@ body {
 }
 .content-wrapper {
   background: $main-color;
-  //padding-bottom: 50px;
-  flex: 1 0 auto;
-  padding-bottom: 50px;
 }
 
 h2 {

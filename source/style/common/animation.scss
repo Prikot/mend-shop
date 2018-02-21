@@ -123,13 +123,23 @@
 
   }
 }
-@keyframes arrow-move {
+@keyframes main-arrow-move {
   from {
-    margin-top: -10px;
+    transform: translateY(0) translateZ(0);
   }
 
   to {
-    margin-top: 20px;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes arrow-move {
+  from {
+    transform: translateY(-70px) translateZ(0);
+  }
+
+  to {
+    transform: translateY(-50px);
   }
 }
 

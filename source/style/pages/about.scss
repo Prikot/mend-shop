@@ -11,6 +11,7 @@
     @include phones() {
       display: block;
       width: 80%;
+      margin-top: 20px;
     }
   }
 
@@ -19,19 +20,46 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    align-content: space-around;
-    flex-flow: row wrap;
-    flex: 1 1 100vh;
+    flex-flow: row nowrap;
+    height: 50vh;
+    min-height: 350px;
+
+    @include tablets() {
+      min-height: 300px;
+      height: 40vh;
+    }
+    @include laptop() {
+      height: 42vh;
+    }
+    @include tablets() {
+      height: 40vh;
+    }
+
+    @include phones() {
+       flex-flow: row wrap;
+        height: auto;
+
+     }
 
     &__img {
-      height: 550px;
+      height: 430px;
       flex: 2 1 300px;
       margin: 40px;
       align-content: flex-end;
 
-      @include phones() {
+      @include desktop() {
         height: 350px;
 
+      }
+      @include laptop() {
+        height: 350px;
+
+      }
+      @include tablets() {
+        height: 300px;
+        width: 300px;
+        flex: 1 1 auto;
+        margin: 10px;
       }
     }
 
@@ -42,24 +70,31 @@
 
     }
     &.item-2 .about__img {
-      background: url("/assets/img/slider/about/about-2-1920.jpg") center center;
+      background: url("/assets/img/slider/about/about-4-1920.jpg") bottom center;
       background-size: cover;
       border-radius: 5px;
 
     }
     &.item-3 .about__img {
-      background: url("/assets/img/slider/about/about-3-1920.jpg") center center;
+      background: url("/assets/img/slider/about/about-5-1920.jpg") center center;
       background-size: cover;
       border-radius: 5px;
     }
     &.item-4 .about__img {
-      background: url("/assets/img/slider/about/about-4-1920.jpg") center center;
+      background: url("/assets/img/slider/showroom/showroom-7-1000.jpg") center center;
       background-size: cover;
       border-radius: 5px;
 
     }
     &.item-5 .about__img {
-      background: url("/assets/img/slider/about/about-5-1920.jpg") left center;
+      background: url("/assets/img/slider/showroom/showroom-6-1000.jpg") left center;
+      background-size: cover;
+      border-radius: 5px;
+
+    }
+
+    &.item-5 .about__img {
+      background: url("/assets/img/slider/showroom/showroom-5-1000.jpg") left center;
       background-size: cover;
       border-radius: 5px;
 
@@ -72,10 +107,27 @@
       font-size: 16px;
       line-height: 1.75;
       flex: 1 1 300px;
+      @include laptop() {
+        flex: 1 1 200px;
+      }
 
+      @include tablets() {
+        flex: 1 1 200px;
+      }
+
+      @include tablets() {
+        margin: 25px;
+      }
     }
   }
   .about_reverse {
     flex-flow: row-reverse wrap;
+
+    @include tablets() {
+      flex-flow: row-reverse nowrap;
+    }
+    @include phones() {
+      flex-flow: row-reverse wrap;
+    }
   }
 }

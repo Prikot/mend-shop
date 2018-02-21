@@ -29,7 +29,7 @@ instafeed.run();
 $(function() {
   $('.btn-container').on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000, 'linear');
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 50}, 1000, 'linear');
   });
 });
 

@@ -1,8 +1,6 @@
 .tissue-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
+  justify-content: flex-start;
   flex-flow: row wrap;
 }
 
@@ -14,7 +12,20 @@
   display: flex;
   flex-direction: row;
   height: 450px;
-  flex: 1 1 600px;
+  width: 50%;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablets() {
+    width: auto;
+    height: 350px;
+  }
+  @include phones() {
+  }
 
   &__img {
     background-size: cover;
@@ -27,16 +38,24 @@
     display: flex;
     flex-direction: column;
     flex-basis: 100px;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-grow: 1;
     background-color: white;
     padding-left: 3rem;
     padding-right: 3rem;
     box-sizing: border-box;
-    //@include tablets() {
-    //  padding-left: 2rem;
-    //  padding-right: 2rem;
-    //}
+
+    @include laptop() {
+      text-align: left;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    @include tablets() {
+      text-align: left;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
     @include phones() {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -48,36 +67,47 @@
     text-align: center;
     text-transform: uppercase;
     font-family: Kurale-Regular, Roboto, sans-serif;
+    @include desktop() {
+      font-size: 1.8rem;
+    }
+    @include laptop() {
+      font-size: 1.55rem;
+    }
+    @include tablets() {
+      font-size: 1.4rem;
+    }
   }
 
   &__text {
     font-size: 1rem;
-    //text-align: center;
     font-family: Roboto, sans-serif;
-    //padding-top: 2rem;
     line-height: 1.75;
     color: #6a6c6e;
-    height: 200px;
+    height: 150px;
     overflow: hidden;
   }
 
   &__link {
     background: #fff;
-    margin-bottom: -1px;
     width: 100%;
     font-weight: 400;
     text-align: center;
     position: relative;
+    margin-bottom: 40px;
 
     &:before {
       content: "";
       width: 100%;
-      height: 98px;
+      height: 200px;
       position: absolute;
       bottom: 100%;
       left: 0;
       background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=0);
+
+      @include desktop() {
+        height: 120px;
+      }
     }
     .tissue__url {
       background-color: #e7ae01;
@@ -123,40 +153,41 @@
   background: url("/assets/img/tissue-page/barhat.jpeg") center center;
 }
 .tvid .tissue__img {
-  background: url("/assets/img/tissue-page/tvid-shanel.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb40-1.jpg") center center;
 }
 .shelk .tissue__img {
-  background: url("/assets/img/tissue-page/shelk.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb44-1.jpg") center center;
 }
 .shifon .tissue__img {
-  background: url("/assets/img/tissue-page/shifon.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb46-1.jpg") center center;
 }
 .gipur .tissue__img {
-  background: url("/assets/img/tissue-page/gipur.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb45-1.jpg") center center;
 }
 .hlopok .tissue__img {
   background: url("/assets/img/tissue-page/hlopok.jpeg") center center;
 }
 .jakard .tissue__img {
-  background: url("/assets/img/tissue-page/jakard.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb41-1.jpg") center center;
 }
 .kletka .tissue__img{
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb29-1.jpg") center center;
 }
 .trikotaj .tissue__img{
   background: url("/assets/img/tissue-page/trikotaj.jpeg") center center;
 }
 .podkladka .tissue__img{
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb47-1.jpg") center center;
 }
 .drap .tissue__img{
-  background: url("/assets/img/tissue-page/drap.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb43-1.jpg") center center;
 }
 .costume .tissue__img{
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb31-1.jpg") center center;
 }
 .furniture .tissue__img{
-  background: url("/assets/img/tissue-page/barhat.jpeg") center center;
+  background: url("/assets/img/tissue-page/feb48-1.jpg") center center;
+  //background-size: cover;
 }
 .tissue-reverse {
   .tissue__img {

@@ -11,8 +11,8 @@ $main-color: rgb(252, 228, 236);
   align-items: flex-end;
   overflow: hidden;
   white-space: nowrap;
-  background:
-          url('/assets/img/banner/test-11-min.jpg') top  center;
+  //background:
+  //        url('/assets/img/banner/test-11-min.jpg') top  center;
   //        url('/assets/img/banner/test-3-min-min.jpg') top center,
   //        url('/assets/img/banner/test-12-min.jpg') top  center,
   //        url('/assets/img/banner/test-18-min.jpg') top center,
@@ -37,7 +37,8 @@ $main-color: rgb(252, 228, 236);
   }
 
   @include phones() {
-    min-height: 40%;
+    height: 30vh;
+    min-height: 500px;
   }
   .header__background {
     position: absolute;
@@ -62,6 +63,7 @@ $main-color: rgb(252, 228, 236);
 
     img {
       display: block;
+      position: fixed;
       //max-width: 100%;
 
       //&.i-1 {
@@ -116,22 +118,48 @@ $main-color: rgb(252, 228, 236);
   }
 
   .instagram {
-    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 11;
     top: 5px;
-    right: 150px;
+    right: 10%;
+    color: white;
+    text-decoration: none;
+
 
     @include desktop() {
-      right: 30px;
+      right: 2%;
     }
 
     @include laptop() {
-      right: 15px;
+      right: 5%;
     }
 
-    @include tablets() {}
+    @include tablets() {
+      right: 5%;
+      top: 8px;
+    }
 
     @include phones() {
-      min-height: 40%;
+    }
+
+    &:hover {
+      .instagram__title,
+      .instagram__link {
+        color: $main-color;
+      }
+    }
+
+    .instagram__title {
+      text-decoration: none;
+      color: white;
+      transition: color 0.5s linear;
+      @include laptop() {
+       display: none;
+      }
     }
   }
 
@@ -139,17 +167,23 @@ $main-color: rgb(252, 228, 236);
     width: 40px;
     height: 40px;
     color: white;
+    margin-right: 5px;
+    transition: color 0.5s linear;
 
-    &:hover {
-      color: $main-color;
+    @include tablets() {
+      background: rgba(0,0,0, 0.3);
+      border-radius: 10px;
     }
   }
   .nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
     width: 100%;
     margin-bottom: auto;
     align-self: flex-start;
-    background: rgba(0,0,0, 0.5);
-    box-shadow: 0 20px 60px 30px rgba(0, 0, 0, 0.5);
+    background: rgba(0,0,0, 0.6);
+    box-shadow: 0 20px 60px 30px rgba(0, 0, 0, 0.6);
 
     @include laptop() {
       box-shadow: none;
@@ -211,7 +245,7 @@ $main-color: rgb(252, 228, 236);
         color: white;
         text-decoration: none;
         text-transform: uppercase;
-        transition: color 0.5s;
+        transition: color 0.5s linear;
         font-family: Kurale-Regular, Roboto, sans-serif;
 
         @include laptop() {
@@ -244,7 +278,7 @@ $main-color: rgb(252, 228, 236);
         }
       }
     }
-    &__item_active &__link {
+    &__item_active .nav__link {
       color: #e7c993;
       pointer-events: none; /* делаем элемент неактивным для взаимодействия */
       cursor: default;
@@ -281,14 +315,14 @@ $main-color: rgb(252, 228, 236);
     }
 
     @include tablets() {
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
       margin-top: auto;
     }
 
     @include phones() {
-      width: 150px;
-      height: 150px;
+      width: 250px;
+      height: 250px;
     }
 
     .logo-circle {
@@ -307,19 +341,16 @@ $main-color: rgb(252, 228, 236);
 
 
       @include laptop() {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
 
       }
       @include tablets() {
-        width: 200px;
-        height: 200px;
-
       }
 
       @include phones() {
-        width: 200px;
-        height: 200px;
+        //width: 100%;
+        //height: 100%;
         margin-top: 0;
       }
     }
@@ -375,6 +406,11 @@ $main-color: rgb(252, 228, 236);
       box-shadow: 0px -8px 30px 6px rgba(0, 0, 0, 0.4);
 
     }
+    @include phones() {
+      height: 45px;
+      box-shadow: 0px -8px 30px 6px rgba(0, 0, 0, 0.4);
+
+    }
 
   }
   &__text {
@@ -396,6 +432,11 @@ $main-color: rgb(252, 228, 236);
 
     @include tablets() {
       font-size: 40px;
+    }
+
+    @include phones() {
+      font-size: 30px;
+      line-height: 1;
     }
   }
 
@@ -428,10 +469,10 @@ $main-color: rgb(252, 228, 236);
 }
 
 .btn-container {
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  animation: arrow-move 1s ease-in infinite alternate;
+  animation: main-arrow-move 1s ease-in infinite alternate;
   @include tablets() {
     display: none;
 
