@@ -29,9 +29,11 @@ section.owl-slider {
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
+  padding-top: 75px;
+  min-height: 800px;
   box-sizing: border-box;
 
   @include desktop() {
@@ -57,8 +59,8 @@ section.owl-slider {
   }
 
   .btn-container {
+    margin-top: 0;
     animation: arrow-move 1s ease-in infinite alternate;
-
     @include tablets() {
       animation: none;
     }
@@ -95,7 +97,11 @@ section.owl-slider {
   }
 
   &:first-child {
-    padding-top: 75px;
+    //padding-top: 0;
+
+    @include desktop() {
+      padding-top: 75px;
+    }
 
     @include laptop() {
       padding-top: 50px;
@@ -108,8 +114,9 @@ section.owl-slider {
 
   &:last-child {
     justify-content: flex-start;
-    height: 80vh;
+    height: 90vh;
     margin-bottom: 60px;
+    margin-top: 60px;
 
     @include desktop() {
       height: 90vh;

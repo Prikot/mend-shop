@@ -79,3 +79,22 @@
     }
   });
 })();
+
+(function(){
+  $('gallery').owlCarousel({
+    loop:true, //Зацикливаем слайдер
+    margin:5, //Отступ от элемента справа в 5px
+    nav: true, //Отключение навигации
+    animateOut: 'fadeOut',
+    dots: false,
+    navText: ["<i class='fa fa-chevron-left fa-lg'></i>" , "<i class='fa fa-chevron-right fa-lg'></i>"],
+    autoplay:true, //Автозапуск слайдера
+    smartSpeed:1000, //Время движения слайда
+    autoplayTimeout:4000, //Время смены слайда
+    responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+      0:{
+        items:1
+      }
+    }
+  });
+})();

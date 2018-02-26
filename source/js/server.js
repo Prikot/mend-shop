@@ -1,48 +1,58 @@
-// var http = require('http'),
-//     fs = require('fs'),
-//     url = require('url'),
-//     path = require('path'),
-//     typeMime = {
-//       '.html': 'text/html',
-//       '.htm': 'text/html',
-//       '.js': 'text/javascript',
-//       '.css': 'text/css',
-//       '.png': 'image/png',
-//       '.jpg': 'image/jpeg'
-//     };
-// http.createServer(function (req, res) {
-//   var _url = url.parse(req.url),
-//       filename = _url.pathname.substring(1),
-//       extname,
-//       type,
-//       img;
-//   if (_url.pathname === '/') {
-//     filename = 'index.html';
-//   }
-//   extname = path.extname(filename);
-//   type = typeMime[path.extname(filename)];
-//   if ((extname === '.png') || (extname === '.jpg')) {
-//     img = fs.readFileSync(filename);
-//     res.writeHead(200, {
-//       'Content-Type': type
-//     });
-//     res.write(img, 'hex');
-//     res.end();
-//   } else {
-//     fs.readFile(filename, 'utf8', function (err, content) {
-//       if (err) {
-//         res.writeHead(404, {
-//           'Content-Type': 'text/plain; charset=utf-8'
-//         });
-//         res.write(err.message);
-//         res.end();
-//       } else {
-//         res.writeHead(200, {
-//           'Content-Type': type
-//         });
-//         res.write(content);
-//         res.end();
-//       }
-//     })
-//   }
-// }).listen(9999);
+// var express = require('express');
+// // var exphbs = require('express-handlebars');
+// var mongoose = require('mongoose');
+// var bodyParser = require('body-parser');
+// var app = express();
+//
+// mongoose.connect('mongodb://localhost/test', {});
+//
+// var Post = mongoose.model('Post', {
+//   date: String,
+//   title: String,
+//   body: String
+// });
+//
+// var jsonParser = bodyParser.json();
+//
+// // подключить шаблонизатор
+// // app.set('views', './views');
+// // app.set('view engine', 'pug');
+//
+// // описать маршруты
+// app.get('/', function(req, res) {
+//   res.send('./index')
+// });
+// app.get('/index', function(req, res) {
+//   res.send('./index');
+// });
+// app.get('/about.html', function(req, res) {
+//   res.send('./about.html');
+// });
+// app.get('/tissue.html', function(req, res) {
+//   res.send('./tissue.html');
+// });
+// app.get('/studio.html', function(req, res) {
+//   res.send('./studio.html');
+// });
+// app.get('/showroom.html', function(req, res) {
+//   res.send('./showroom.html');
+// });
+// app.get('/gallery.html', function(req, res) {
+//   res.send('./gallery.html');
+// });
+//
+// app.post('/addItem', jsonParser, function(req, res) {
+//   var post = new Post(req.body);
+//
+//   post.save(function(err) {
+//     if (err) {
+//       res.send('ошибка');
+//     } else {
+//       res.send('ok');
+//     }
+//   });
+// });
+//
+// app.listen(9999, function() {
+//   console.log('Example app listening on port 3000!');
+// });

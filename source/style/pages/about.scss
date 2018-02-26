@@ -21,18 +21,22 @@
     justify-content: space-around;
     align-items: center;
     flex-flow: row nowrap;
-    height: 50vh;
-    min-height: 350px;
+    height: 70vh;
+    min-height: 500px;
+    @include desktop() {
+      min-height: 350px;
+      height: 50vh;
+    }
 
     @include tablets() {
-      min-height: 300px;
+      min-height: 330px;
       height: 40vh;
     }
     @include laptop() {
       height: 42vh;
     }
     @include tablets() {
-      height: 40vh;
+      height: 42vh;
     }
 
     @include phones() {
