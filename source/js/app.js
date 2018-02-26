@@ -7,8 +7,7 @@ $(document).ready(function() {
   var galleryClass = '.gallery';
   $(galleryClass+' li img').on('click', function(){
     var $gallery = $(this).parents(galleryClass);
-    $('.main-img',$gallery).
-    attr('src',$(this).attr('src').replace('thumb/', ''));
+    $('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
   });
   var imgSwap = [];
   $(galleryClass+' li img').each(function(){

@@ -1,13 +1,27 @@
 header.header#header
-  .header__background
-    img.main-pic.i-1(src="/assets/img/banner/test-11-min.jpg")
-  //  img.main-pic.i-2(src="/assets/img/banner/test-12-min.jpg")
-  //  img.main-pic.i-3(src="/assets/img/banner/test-13-min.jpg")
-  //  img.main-pic.i-4(src="/assets/img/banner/test-14-min.jpg")
-  //  img.main-pic.i-5(src="/assets/img/banner/test-15-min.jpg")
-  //  img.main-pic.i-6(src="/assets/img/banner/test-16-min.jpg")
-  //  img.main-pic.i-7(src="/assets/img/banner/test-17-min.jpg")
-  //  img.main-pic.i-8(src="/assets/img/banner/test-18-min.jpg")
+  .header__background.rotator
+    ul
+      li
+        img.show(src="/assets/img/banner/test-17-min.jpg")
+      li
+        img(src="/assets/img/banner/test-12-min.jpg")
+      li
+        img(src="/assets/img/banner/test-13-min.jpg")
+      li
+        img(src="/assets/img/banner/test-14-min.jpg")
+      li
+        img(src="/assets/img/banner/test-15-min.jpg")
+      li
+        img(src="/assets/img/banner/test-16-min.jpg")
+      li
+        img(src="/assets/img/banner/test-11-min.jpg")
+    //img#image_2(src="/assets/img/banner/test-12-min.jpg")
+    //img#image_3(src="/assets/img/banner/test-13-min.jpg")
+    //img#image_4(src="/assets/img/banner/test-14-min.jpg")
+    //img#image_5(src="/assets/img/banner/test-15-min.jpg")
+    //img#image_6(src="/assets/img/banner/test-16-min.jpg")
+    //img#image_7(src="/assets/img/banner/test-17-min.jpg")
+    //img#image_8(src="/assets/img/banner/test-18-min.jpg")
   a.instagram(target='_blank' href="https://www.instagram.com/tkani_mendosa/")
     i.instagram__link.fab.fa-instagram
     span.instagram__title INSTAGRAM
@@ -17,10 +31,8 @@ header.header#header
   .banner
     a(href='/index.html').logo-shadow-link
       .logo-circle
-        //.logo M
-        //.logo__text MENDOSA
     .text-container
-      .banner__text Красивые итальянские ткани
+      .banner__text Творческая мастерская
       a(href='#id1').btn-container
         .go-down.fas.fa-chevron-down
       .banner__text_it Bellissimi tessuti italiani

@@ -1,68 +1,43 @@
-// // /**
-// //  * Created by aleksandr on 26.01.18.
-// //  */
-// //
-// (function(){
-//
-//   var block = $('#header .header__background');
-//   var item = $('#header .header__background .main-pic');
-//
-//   setInterval(function() {
-//     for(var i = 0;  i < item.length; i++) {
-//       if(i < item.length){
-//         block.animate({'opacity':'0'}, 1000,  function(){
-//           i=1;
-//           block.css({'background':'url('+imgHead[0]+')'});
-//         });
-//         block.animate({'opacity':'1'}, 1000);
-//       }else{
-//         block.animate({'opacity':'0'}, 200, function(){
-//           block.css({'background':'url('+imgHead[i]+')'});
-//           i++;
-//         });
-//         block.animate({'opacity':'1'},200);
-//       }
-//     }
-//
-//
-//
-//   }, 8000);
-// })();
-//
-//
-// $(function () {}
-//
-//
-// );
-//
+function theRotator() {
+  //Set the opacity of all images to 0
+  $('div.rotator ul li').css({opacity: 0.0});
 
+  //Get the first image and display it (gets set to full opacity)
+  $('div.rotator ul li:first').css({opacity: 1.0});
 
-var total_pics_num = 4; // колличество изображений
-var interval = 5000;    // задержка между изображениями
-var time_out = 1;       // задержка смены изображений
-var i = 0;
-var timeout;
-var opacity = 100;
-function fade_to_next() {
-  opacity--;
-  var k = i + 1;
-  var image_now = 'image_' + i;
-  if (i == total_pics_num) k = 1;
-  var image_next = 'image_' + k;
-  document.getElementById(image_now).style.opacity = opacity/100;
-  document.getElementById(image_now).style.filter = 'alpha(opacity='+ opacity +')';
-  document.getElementById(image_next).style.opacity = (100-opacity)/100;
-  document.getElementById(image_next).style.filter = 'alpha(opacity='+ (100-opacity) +')';
-  timeout = setTimeout("fade_to_next()",time_out);
-  if (opacity==1) {
-    opacity = 100;
-    clearTimeout(timeout);
+  //Call the rotator function to run the slideshow, 6000 = change to next image after 6 seconds
+
+  if ($('div.rotator ul li').length > 1) {
+    setTimeout('rotate()', 6000);
   }
 }
-setInterval (
-    function() {
-      i++;
-      if (i > total_pics_num) i=1;
-      fade_to_next();
-    }, interval
-);
+
+function rotate() {
+  //Get the first image
+  var current = ($('div.rotator ul li.show')? $('div.rotator ul li.show') : $('div.rotator ul li:first'));
+
+  if ( current.length == 0 ) current = $('div.rotator ul li:first');
+
+  //Get next image, when it reaches the end, rotate it back to the first image
+  var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div.rotator ul li:first') :current.next()) : $('div.rotator ul li:first'));
+
+  //Un-comment the 3 lines below to get the images in random order
+
+  //var sibs = current.siblings();
+  //var rndNum = Math.floor(Math.random() * sibs.length );
+  //var next = $( sibs[ rndNum ] );
+
+  //Set the fade in effect for the next image, the show class has higher z-index
+  next.css({opacity: 0.0}).addClass('show').animate({opacity: 1.0}, 1000);
+
+  //Hide the current image
+  current.animate({opacity: 0.0}, 1000, function(){setTimeout('rotate()', 6000);}) .removeClass('show');
+
+};
+
+$(document).ready(function() {
+  //Load the slideshow
+  theRotator();
+  $('div.rotator').fadeIn(1000);
+  $('div.rotator ul li').fadeIn(1000); // tweek for IE
+});
