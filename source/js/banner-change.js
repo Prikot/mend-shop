@@ -23,9 +23,9 @@ function rotate() {
 
   //Un-comment the 3 lines below to get the images in random order
 
-  //var sibs = current.siblings();
-  //var rndNum = Math.floor(Math.random() * sibs.length );
-  //var next = $( sibs[ rndNum ] );
+  var sibs = current.siblings();
+  var rndNum = Math.floor(Math.random() * sibs.length );
+  var next = $( sibs[ rndNum ] );
 
   //Set the fade in effect for the next image, the show class has higher z-index
   next.css({opacity: 0.0}).addClass('show').animate({opacity: 1.0}, 1000);

@@ -26,7 +26,6 @@ $.fn.preload = function() {
 // INSTAGRAM FOOTER
 // ==============================
 
-
 var instafeed = new Instafeed({
   userId: '4772247690',
   limit: 6,
@@ -49,6 +48,12 @@ $(function() {
 
 $(function() {
   $('.nav li a[href="#footer"]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000, 'linear');
+  });
+});
+$(function() {
+  $('.about__text a[href="#footer"]').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000, 'linear');
   });

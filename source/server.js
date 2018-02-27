@@ -20,7 +20,7 @@ http.createServer
       img;
   if (_url.pathname === '/') {
     filename
-        = 'about.html'
+        = 'index.html'
     ;
   }
   extname = path.extname(
