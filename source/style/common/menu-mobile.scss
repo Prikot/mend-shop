@@ -13,9 +13,13 @@ $main-color: rgb(252, 228, 236);
   cursor: pointer;
   background-color: rgba(0,0,0,0.3);
   border-radius: 4px;
+
+  @include tablets() {
+    display: block;
+  }
+
   &.active {
     background-color: rgba(255,255,255,0.3);
-
   }
 
   &:hover {
@@ -24,6 +28,10 @@ $main-color: rgb(252, 228, 236);
     .sandw .sandw-bottom {
       background: #e7c993;
       text-decoration: none;
+
+      @include phones() {
+        background: white;
+      }
     }
   }
 
@@ -34,14 +42,8 @@ $main-color: rgb(252, 228, 236);
       background: white;
       text-decoration: none;
     }
-  }
-
-
-  @include tablets {
-    display: block;
 
   }
-
 }
 
 .sandw {

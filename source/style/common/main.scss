@@ -42,6 +42,9 @@ body {
   flex-direction: column;
 }
 .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
   background: $main-color;
 }
 

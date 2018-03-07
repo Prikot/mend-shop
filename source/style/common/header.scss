@@ -8,7 +8,7 @@ $main-color: rgb(252, 228, 236);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  //align-items: flex-start;
+  align-items: flex-start;
   overflow: hidden;
   white-space: nowrap;
 
@@ -17,9 +17,10 @@ $main-color: rgb(252, 228, 236);
   }
 
   @include phones() {
-    height: 30vh;
-    min-height: 500px;
+    max-height: 500px;
+    min-height: auto;
   }
+
   .header__background {
     position: absolute;
     top: -280px;
@@ -33,6 +34,17 @@ $main-color: rgb(252, 228, 236);
     img {
       //display: block;
       min-height: 1280px;
+      @include laptop() {
+        min-height: 80%;
+      }
+
+      @include tablets() {
+        min-height: 60%;
+      }
+
+      @include phones() {
+        min-height: 40%;
+      }
     }
 
     @include phones() {
@@ -49,22 +61,15 @@ $main-color: rgb(252, 228, 236);
 
 
   }
-  @include laptop() {
-    min-height: 80%;
-  }
 
-  @include tablets() {
-    min-height: 60%;
-  }
-
-  @include phones() {
-    min-height: 40%;
-  }
 
   .call-me-baby {
     position: absolute;
     top: 5px;
     left: 150px;
+    @include phones() {
+      right: 10px;
+    }
   }
 
   .instagram {
@@ -246,8 +251,10 @@ $main-color: rgb(252, 228, 236);
   align-items: stretch;
   align-content: stretch;
   width: 100%;
-  height: 100%;
+  //height: 100%;
   position: absolute;
+  bottom: 0;
+  left: 0;
 
   .logo-shadow-link {
     text-decoration: none;
@@ -278,7 +285,7 @@ $main-color: rgb(252, 228, 236);
 
     .logo-circle {
       align-self: center;
-      background: url("/assets/img/logo/logo-white.png") center center;
+      background: url(/assets/img/logo/logo-white.png) center center;
       background-size: 100%;
       background-repeat: no-repeat;
       width: 100%;
@@ -352,6 +359,8 @@ $main-color: rgb(252, 228, 236);
       box-shadow: 0px -8px 30px 6px rgba(0, 0, 0, 0.4);
 
     }
+
+
     @include phones() {
       height: 45px;
       box-shadow: 0px -8px 30px 6px rgba(0, 0, 0, 0.4);
@@ -479,3 +488,11 @@ div.rotator ul li.show {
   z-index:500;
 }
 
+
+
+//@media (max-device-width: 414px) {
+//
+//  .rc-connect .rc-inactive #rc-phone-back {
+//    right: 1rem !important;
+//  }
+//}

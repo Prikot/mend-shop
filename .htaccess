@@ -3,3 +3,11 @@ order deny,allow
 deny from all
 
 allow from 109.252.105.156
+
+allow from 83.220.237.251
+
+allow from 195.158.232.58
+
+allow from 176.59.41.212
+
+allow from 66.102.9.18

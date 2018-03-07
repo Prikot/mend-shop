@@ -21,22 +21,25 @@
     justify-content: space-around;
     align-items: center;
     flex-flow: row nowrap;
-    height: 70vh;
-    min-height: 500px;
+    height: 65vh;
+    min-height: 600px;
     @include desktop() {
       min-height: 350px;
-      height: 50vh;
+      height: 60vh;
+
     }
 
     @include tablets() {
-      min-height: 330px;
-      height: 40vh;
+      min-height: 350px;
+      height: 50vh;
     }
     @include laptop() {
-      height: 42vh;
+      min-height: 400px;
+
+      //height: 50vh;
     }
     @include tablets() {
-      height: 42vh;
+      //height: 42vh;
     }
 
     @include phones() {
@@ -46,7 +49,7 @@
      }
 
     &__img {
-      height: 430px;
+      height: 500px;
       flex: 2 1 300px;
       margin: 40px;
       align-content: flex-end;
@@ -68,37 +71,37 @@
     }
 
     &.item-1 .about__img {
-      background: url("/assets/img/slider/about/about-1-1920.jpg") center center;
+      background: url(/assets/img/slider/about/about-1-1000.jpg) center center  no-repeat;
       background-size: cover;
       border-radius: 5px;
 
     }
     &.item-2 .about__img {
-      background: url("/assets/img/slider/about/about-4-1920.jpg") bottom center;
+      background: url(/assets/img/slider/about/about-4-1000.jpg) bottom center no-repeat;
       background-size: cover;
       border-radius: 5px;
 
     }
     &.item-3 .about__img {
-      background: url("/assets/img/slider/about/about-5-1920.jpg") center center;
+      background: url(/assets/img/slider/about/about-5-1000.jpg) center center no-repeat;
       background-size: cover;
       border-radius: 5px;
     }
     &.item-4 .about__img {
-      background: url("/assets/img/slider/showroom/showroom-7-1000.jpg") center center;
+      background: url(/assets/img/slider/showroom/showroom-7-1000.jpg) center center no-repeat;
       background-size: cover;
       border-radius: 5px;
 
     }
     &.item-5 .about__img {
-      background: url("/assets/img/slider/showroom/showroom-6-1000.jpg") left center;
+      background: url(/assets/img/slider/showroom/showroom-6-1000.jpg) center center no-repeat;
       background-size: cover;
       border-radius: 5px;
 
     }
 
-    &.item-5 .about__img {
-      background: url("/assets/img/slider/showroom/showroom-5-1000.jpg") left center;
+    &.item-6 .about__img {
+      background: url(/assets/img/slider/showroom/showroom-5-1000.jpg) left center no-repeat;
       background-size: cover;
       border-radius: 5px;
 

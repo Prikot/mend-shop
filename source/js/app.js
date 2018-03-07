@@ -5,7 +5,7 @@
 
 $(document).ready(function() {
   var galleryClass = '.gallery';
-  $(galleryClass+' li img').on('click', function(){
+  $(galleryClass+' li img').on('click' || 'touchend', function(){
     var $gallery = $(this).parents(galleryClass);
     $('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
   });
@@ -56,5 +56,12 @@ $(function() {
   $('.about__text a[href="#footer"]').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000, 'linear');
+  });
+});
+
+$(function() {
+  $('.barhat__img').on('click', function(e) {
+    e.preventDefault();
+    $(this).$('.barhat__header').animate({ left: 0}, 1000, 'linear');
   });
 });
