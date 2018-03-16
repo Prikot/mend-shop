@@ -113,6 +113,8 @@
   }
 }
 
+
+
 @keyframes back-img-test {
   from {
     transform: translateY(0) translateZ(0) ;
@@ -123,6 +125,34 @@
 
   }
 }
+
+@media screen and (max-width: 768px) {
+  @keyframes back-img-test {
+    from {
+      transform: translateY(0) translateZ(0) ;
+    }
+
+    to {
+      transform: translateY(-50px);
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes back-img-test {
+    from {
+      transform: translateY(0) translateZ(0) ;
+    }
+
+    to {
+      transform: translateY(-100px);
+
+    }
+  }
+}
+
+
 @keyframes main-arrow-move {
   from {
     transform: translateY(0) translateZ(0);
