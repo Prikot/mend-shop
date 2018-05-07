@@ -21,10 +21,10 @@ function initMap() {
       {name: "Styled Map"});
 
   var mapOptions = {
-    zoom: 14,
+    zoom: 15,
     scaleControl: false,
     scrollwheel: false,
-    center: new google.maps.LatLng(55.694732, 37.530343),
+    center: new google.maps.LatLng(55.694500, 37.529572),
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
     }
@@ -32,8 +32,9 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'),
       mapOptions);
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(55.694732, 37.530343),
-    map: map
+    position: new google.maps.LatLng(55.694500, 37.529572),
+    map: map,
+    title: 'Ателье-бутик «Mendosa»'
     // icon: 'map_marker.svg'
   });
   map.mapTypes.set('map_style', styledMap);

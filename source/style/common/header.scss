@@ -13,8 +13,8 @@ $main-color: rgb(252, 228, 236);
   white-space: nowrap;
 
   @include tablets() {
-    height: 40vh;
-    min-height: 400px;
+    height: 38vh;
+    min-height: 380px;
   }
 
   @include phones() {
@@ -32,20 +32,21 @@ $main-color: rgb(252, 228, 236);
     min-height: 1280px;
     animation: back-img-test 15s linear infinite alternate;
 
-    img {
+    .header__slide {
       //display: block;
       min-height: 1280px;
-      @include laptop() {
-        min-height: 80%;
-      }
+      //width: 100%;
+      //@include laptop() {
+      //  min-height: 1000px;
+      //}
 
       @include tablets() {
-        min-height: 60%;
+        min-height: 900px;
       }
 
-      @include phones() {
-        min-height: 40%;
-      }
+      //@include phones() {
+      //  min-height: 400px;
+      //}
     }
 
     @include phones() {
@@ -84,9 +85,6 @@ $main-color: rgb(252, 228, 236);
     right: 5%;
     color: white;
     text-decoration: none;
-
-
-
 
     @include desktop() {
       right: 2%;
@@ -231,8 +229,6 @@ $main-color: rgb(252, 228, 236);
         &:active {
           color: #e7c993;
           text-decoration: none;
-
-
         }
       }
     }
@@ -240,7 +236,6 @@ $main-color: rgb(252, 228, 236);
       color: #e7c993;
       pointer-events: none; /* делаем элемент неактивным для взаимодействия */
       cursor: default;
-
     }
   }
 }
@@ -286,7 +281,7 @@ $main-color: rgb(252, 228, 236);
 
     .logo-circle {
       align-self: center;
-      background: url(/assets/img/logo/logo-white.png) center center;
+      background: url('/assets/img/logo/logo-white.png') center center;
       background-size: 100%;
       background-repeat: no-repeat;
       width: 100%;
@@ -356,7 +351,7 @@ $main-color: rgb(252, 228, 236);
     box-shadow: 0px -20px 30px 6px rgba(0, 0, 0, 0.4);
 
     @include laptop() {
-      height: 60px;
+      height: 72px;
       box-shadow: 0px -8px 30px 6px rgba(0, 0, 0, 0.4);
 
     }
@@ -382,7 +377,7 @@ $main-color: rgb(252, 228, 236);
     }
     @include laptop() {
       font-size: 40px;
-      line-height: 1;
+      line-height: 1.5;
 
     }
 
@@ -410,7 +405,7 @@ $main-color: rgb(252, 228, 236);
 
     @include laptop() {
       font-size: 40px;
-      line-height: 1;
+      line-height: 1.5;
 
     }
     @include tablets() {
@@ -473,23 +468,80 @@ div.rotator ul {
   padding:0;
 }
 div.rotator ul li {
-  //float:left;
+  width: 100%;
   position:absolute;
   top: 0;
   left: 0;
   list-style: none;
 }
 /* rotator image style */
-div.rotator ul li img {
-  //border:1px solid #ccc;
-  //padding: 4px;
-  //background: #FFF;
-}
 div.rotator ul li.show {
   z-index:500;
 }
 
 
+
+#header__slide_1 {
+  background: url("/assets/img/banner/banner-17.jpg") center center no-repeat;
+  background-size: cover;
+
+  @include tablets() {
+    background: url("/assets/img/banner/banner-17-900.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+#header__slide_2 {
+  background: url("/assets/img/banner/banner-13.jpg") center center no-repeat;
+  background-size: cover;
+
+  @include tablets() {
+    background: url("/assets/img/banner/banner-13-900.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+#header__slide_3 {
+  background: url("/assets/img/banner/banner-14.jpg") center center no-repeat;
+  background-size: cover;
+
+  @include tablets() {
+    background: url("/assets/img/banner/banner-14-900.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+#header__slide_4 {
+  background: url("/assets/img/banner/banner-18.jpg") center center no-repeat;
+  background-size: cover;
+
+  @include tablets() {
+    background: url("/assets/img/banner/banner-18-900.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+#header__slide_5 {
+  background: url("/assets/img/banner/banner-11.jpg") center center no-repeat;
+  background-size: cover;
+
+  @include tablets() {
+    background: url("/assets/img/banner/banner-11-900.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+//
+//#header__slide_2,
+//#header__slide_3,
+//#header__slide_4,
+//#header__slide_5 {
+//  display: block;
+//
+//  @include tablets() {
+//    display: none;
+//  }
+//}
 //@media (max-device-width: 414px) {
 //
 //  .rc-connect .rc-inactive #rc-phone-back {

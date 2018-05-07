@@ -13,19 +13,19 @@
     align-content: space-around;
     flex-flow: row nowrap;
     width: 100%;
+    margin-bottom: 30px;
     @include tablets() {
       flex-flow: column wrap;
 
     }
     &__img {
-      //border: 1px solid black;
+      //padding-bottom: 30px;
       height: 300px;
       width: 50%;
-      //min-width: 500px;
       margin: 30px;
       align-content: flex-end;
       .map-pic {
-        width: 100%;
+        max-width: 100%;
       }
       @include tablets() {
         width: 70%;

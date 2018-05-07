@@ -1,4 +1,3 @@
-
 // ==============================
 // Gallery
 // ==============================
@@ -7,7 +6,7 @@ $(document).ready(function() {
   var galleryClass = '.gallery';
   $(galleryClass+' li img').on('click' || 'touchend', function(){
     var $gallery = $(this).parents(galleryClass);
-    $('.main-img',$gallery).attr('src',$(this).attr('src').replace('thumb/', ''));
+    $('.main-img',$gallery).attr('src', $(this).attr('src').replace('thumb/', ''));
   });
   var imgSwap = [];
   $(galleryClass+' li img').each(function(){
@@ -30,9 +29,9 @@ $.fn.preload = function() {
 var instafeed = new Instafeed({
   get: 'user',
   userId: '4772247690',
-  // clientId: '36a7ffd38682428ba1e245c711447831',
+  clientId: '36a7ffd38682428ba1e245c711447831',
   limit: 6,
-  accessToken: '4772247690.36a7ffd.d85222567ab549dc9e75872185b1e355'
+  accessToken: '4772247690.36a7ffd.86cdc7120cba426e931bd74f5336de52'
   // template: 'a(href="https://www.instagram.com/tkani_mendosa/")' +  'img(src="{{image}}" style="margin: 0 10px 0 0; width: 120px; height: 120px;")'
 });
 

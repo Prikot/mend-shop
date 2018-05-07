@@ -102,7 +102,8 @@ function loadImg (onComplete)
   var imgLoadTimeout = setInterval (function () {
     if (timeout === null) {
       clearInterval (imgLoadTimeout);
-    } else if ((percents >= app.settings.limits.imageLoadThreshold) && (timeout >= app.settings.limits.imageLoadTimeout)) {
+    }
+    else if (percents >= 100) {
       clearInterval (imgLoadTimeout);
       timeout = null;
 
