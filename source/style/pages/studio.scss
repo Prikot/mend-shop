@@ -27,9 +27,8 @@
     @include desktop() {
       min-height: 350px;
       height: 60vh;
-
+      margin-bottom: 25px;
     }
-
 
     @include laptop() {
       min-height: 400px;
@@ -68,42 +67,124 @@
       }
     }
     &__img.item-1 {
-      background: url('./../../assets/img/studio-page/process-9.jpg') center center no-repeat;
+      background: url('./../../assets/img/studio-page/process-9-1000.jpg') center center no-repeat;
       background-size: cover;
+
+      @include desktop() {
+        background: url('./../../assets/img/studio-page/process-9-700.jpg') center center no-repeat;
+        background-size: cover;
+      }
+
+      @include tablets() {
+        background: url('./../../assets/img/studio-page/process-9-500.jpg') center center no-repeat;
+        background-size: cover;
+      }
     }
     &__img.item-2 {
-      background: url('./../../assets/img/studio-page/process-8.jpg') center center no-repeat;
+      background: url('./../../assets/img/studio-page/process-8-1000.jpg') center center no-repeat;
       background-size: cover;
+      @include desktop() {
+        background: url('./../../assets/img/studio-page/process-8-700.jpg') center center no-repeat;
+        background-size: cover;
+      }
+
+      @include tablets() {
+        background: url('./../../assets/img/studio-page/process-8-500.jpg') center center no-repeat;
+        background-size: cover;
+      }
     }
     &__img.item-3 {
-      background: url('./../../assets/img/studio-page/process-7.jpg') center center no-repeat;
+      background: url('./../../assets/img/studio-page/process-7-1000.jpg') center center no-repeat;
       background-size: cover;
+      @include desktop() {
+        background: url('./../../assets/img/studio-page/process-7-700.jpg') center center no-repeat;
+        background-size: cover;
+      }
+
+      @include tablets() {
+        background: url('./../../assets/img/studio-page/process-7-500.jpg') center center no-repeat;
+        background-size: cover;
+      }
     }
 
     &__img.item-4 {
-      background: url('./../../assets/img/studio-page/process-6.jpg') center center no-repeat;
+      background: url('./../../assets/img/studio-page/process-6-1000.jpg') center center no-repeat;
       background-size: cover;
+      @include desktop() {
+        background: url('./../../assets/img/studio-page/process-6-700.jpg') center center no-repeat;
+        background-size: cover;
+      }
+
+      @include tablets() {
+        background: url('./../../assets/img/studio-page/process-6-500.jpg') center center no-repeat;
+        background-size: cover;
+      }
     }
 
     &__img.item-5 {
-      background: url('./../../assets/img/studio-page/process-5.jpg') center center no-repeat;
+      background: url('./../../assets/img/studio-page/process-5-1000.jpg') center center no-repeat;
       background-size: cover;
+      @include desktop() {
+        background: url('./../../assets/img/studio-page/process-5-700.jpg') center center no-repeat;
+        background-size: cover;
+      }
+
+      @include tablets() {
+        background: url('./../../assets/img/studio-page/process-5-500.jpg') center center no-repeat;
+        background-size: cover;
+      }
     }
     &__img.item-6 {
-      background: url('./../../assets/img/studio-page/process-4.jpg') center center no-repeat;
+      background: url('./../../assets/img/studio-page/process-4-1000.jpg') center center no-repeat;
       background-size: cover;
+      @include desktop() {
+        background: url('./../../assets/img/studio-page/process-4-700.jpg') center center no-repeat;
+        background-size: cover;
+      }
+
+      @include tablets() {
+        background: url('./../../assets/img/studio-page/process-4-500.jpg') center center no-repeat;
+        background-size: cover;
+      }
     }
     &__img.item-7 {
-      background: url('./../../assets/img/studio-page/process-3.jpg') center center no-repeat;
+      background: url('./../../assets/img/studio-page/process-3-1000.jpg') center center no-repeat;
       background-size: cover;
+      @include desktop() {
+        background: url('./../../assets/img/studio-page/process-3-700.jpg') center center no-repeat;
+        background-size: cover;
+      }
+
+      @include tablets() {
+        background: url('./../../assets/img/studio-page/process-3-500.jpg') center center no-repeat;
+        background-size: cover;
+      }
     }
     &__img.item-8 {
-      background: url('./../../assets/img/studio-page/process-2.jpg') center center no-repeat;
+      background: url('./../../assets/img/studio-page/process-2-1000.jpg') center center no-repeat;
       background-size: cover;
+      @include desktop() {
+        background: url('./../../assets/img/studio-page/process-2-700.jpg') center center no-repeat;
+        background-size: cover;
+      }
+
+      @include tablets() {
+        background: url('./../../assets/img/studio-page/process-2-500.jpg') center center no-repeat;
+        background-size: cover;
+      }
     }
     &__img.item-9 {
-      background: url('./../../assets/img/studio-page/process-1.jpg') center center no-repeat;
+      background: url('./../../assets/img/studio-page/process-1-1000.jpg') center center no-repeat;
       background-size: cover;
+      @include desktop() {
+        background: url('./../../assets/img/studio-page/process-1-700.jpg') center center no-repeat;
+        background-size: cover;
+      }
+
+      @include tablets() {
+        background: url('./../../assets/img/studio-page/process-1-500.jpg') center center no-repeat;
+        background-size: cover;
+      }
     }
 
     &__text {

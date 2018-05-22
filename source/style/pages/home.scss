@@ -333,59 +333,108 @@ section.owl-slider {
 
 #slider-about {
   .item-1 {
-    background: url('../../assets/img/slider/about/about-1-1000-min.png') center center no-repeat;
+    background: url('../../assets/img/slider/about/about-1-1000.png') center center no-repeat;
     background-size: cover;
 
+    @include laptop() {
+      background: url('../../assets/img/slider/about/about-1-700.png') center center no-repeat;
+      background-size: cover;
+    }
   }
   .item-2 {
-    background: url('../../assets/img/slider/about/about-2-1000-min.png') center center no-repeat;
+    background: url('../../assets/img/slider/about/about-2-1000.png') center center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/about/about-2-700.png') center center no-repeat;
+      background-size: cover;
+    }
+
   }
   .item-3 {
-    background: url('../../assets/img/slider/about/about-4-1000-min.png') center center no-repeat;
+    background: url('../../assets/img/slider/about/about-4-1000.png') center center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/about/about-4-700.png') center center no-repeat;
+      background-size: cover;
+    }
+
   }
   .item-4 {
-    background: url('../../assets/img/slider/about/about-5-1000-min.png') center center no-repeat;
+    background: url('../../assets/img/slider/about/about-5-1000.png') center center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/about/about-5-700.png') center center no-repeat;
+      background-size: cover;
+    }
   }
 }
 
 #slider-tissue {
   .item-1 {
-    background: url('../../assets/img/slider/tissue/tissue-7-r.jpeg') left center no-repeat;
-    //background: url("/assets/img/slider/tissue-7-r.jpeg") left center;
-    background-size: 100% 100%;
+    background: url('../../assets/img/slider/tissue/feb29-1000.jpg') left center no-repeat;
+    background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/tissue/feb29-700.png') center center no-repeat;
+      background-size: cover;
+    }
   }
   .item-2 {
-    background: url('../../assets/img/slider/tissue/tissue-8.jpeg') left center no-repeat;
+    background: url('../../assets/img/slider/tissue/feb41-1000.jpg') left center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/tissue/feb41-700.png') center center no-repeat;
+      background-size: cover;
+    }
   }
   .item-3 {
-    background: url('../../assets/img/slider/tissue/tissue-1.jpeg') left center no-repeat;
+    background: url('../../assets/img/slider/tissue/feb46-1000.jpg') left center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/tissue/feb46-700.png') center center no-repeat;
+      background-size: cover;
+    }
   }
   .item-4 {
-    background: url('../../assets/img/slider/tissue/tissue-4.jpeg') left center no-repeat;
+    background: url('../../assets/img/slider/tissue/feb47-1000.jpg') left center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/tissue/feb47-700.png') center center no-repeat;
+      background-size: cover;
+    }
   }
 }
 #slider-studio {
   .item-1 {
-    background: url('../../assets/img/studio-page/process-9.jpg') left center no-repeat;
+    background: url('../../assets/img/slider/studio/process-9-1000.jpg') left center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/studio/process-9-700.jpg') center center no-repeat;
+      background-size: cover;
+    }
   }
   .item-2 {
-    background: url('../../assets/img/studio-page/process-8.jpg') left center no-repeat;
+    background: url('../../assets/img/slider/studio/process-8-1000.jpg') left center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/studio/process-8-700.jpg') center center no-repeat;
+      background-size: cover;
+    }
   }
   .item-3 {
-    background: url('../../assets/img/studio-page/process-7.jpg') left center no-repeat;
+    background: url('../../assets/img/slider/studio/process-7-1000.jpg') left center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/studio/process-7-700.jpg') center center no-repeat;
+      background-size: cover;
+    }
   }
   .item-4 {
-    background: url('../../assets/img/studio-page/process-6.jpg') left center no-repeat;
+    background: url('../../assets/img/slider/studio/process-6-1000.jpg') left center no-repeat;
     background-size: cover;
+    @include laptop() {
+      background: url('../../assets/img/slider/studio/process-6-700.jpg') center center no-repeat;
+      background-size: cover;
+    }
   }
 }
 
